@@ -2,6 +2,7 @@ import Appointment from "../component/Appointment"
 import BestSelling from "../component/BestSelling"
 import HowWeWork from "../component/HowWeWork"
 import Services from "../component/Services"
+import Testimonial from "../component/Testimonial"
 
 function HomeBody() {
   return (
@@ -10,6 +11,7 @@ function HomeBody() {
       <HowWeWork />
       <BestSelling />
       <Appointment />
+      <Testimonial />
     </div>
   )
 }

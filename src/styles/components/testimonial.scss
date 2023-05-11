@@ -1,0 +1,129 @@
+.testimonial {
+  background: #f3f1ee;
+  font-style: normal;
+  padding: 7rem 9rem;
+}
+
+.testimonial__box-1 {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.testimonial__heading {
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 120%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: $color-txt-7;
+}
+
+.testimonial__paragraph {
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  color: #6b7280;
+}
+
+.testimonial__lists {
+  width: 100%;
+  height: 43rem;
+}
+
+.testimonial__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial__inner-paragraph {
+  max-width: 67rem;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: $color-txt-7;
+}
+
+.testimonial__inner-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.testimonial__inner-name {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: $color-white;
+}
+
+.testimonial__inner-box--1 {
+  width: 60%;
+}
+
+.testimonial__inner-box--2 {
+  @extend %center;
+  position: relative;
+  // width: 36%;
+  width: 41rem;
+  height: 96%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.testimonial__box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 15rem;
+}
+
+.testimonial__icons-box {
+  @extend %center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.testimonial__icon-box {
+  @extend %center;
+  width: 7.8rem;
+  height: 5.4rem;
+  opacity: 0.6;
+  border: 0.5px solid $color-txt-7;
+  border-radius: 64px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial__icon-box:hover {
+  opacity: 1;
+}
+
+.testimonial__line-box {
+  @extend %center;
+}
+
+.testimonial__line {
+  position: relative;
+  display: block;
+  width: 40rem;
+  height: 0.21rem;
+  background: $color-white-g;
+}
+
+.testimonial__line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 0.21rem;
+  left: 0;
+  top: 0;
+  background: #6c6c72;
+}
