@@ -1,4 +1,66 @@
 .appointment {
   background: $background-hero;
   background-image: url(/appointment-background.svg);
+  display: flex;
+  font-style: normal;
+  width: 100%;
+  height: 52rem;
+  padding-left: 9rem;
+}
+
+.appointment__box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 55%;
+}
+
+.appointment__heading {
+  max-width: 70rem;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 120%;
+  background: $color-white-a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.appointment__paragraph {
+  max-width: 70rem;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  color: $color-white;
+}
+
+.appointment__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 26.5rem;
+  height: 5.7rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  margin-top: 2.5rem;
+  color: #0e5543;
+  background: $color-white-f;
+  border-radius: $border;
+  border: 1px solid #ffffff1a;
+}
+
+.appointment__box-2 {
+  height: 100%;
+  width: 45%;
+  border-radius: 0px;
+  opacity: 0.8;
+  @extend %center;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.appointment__img {
+  width: 90%;
+  height: 90%;
 }
