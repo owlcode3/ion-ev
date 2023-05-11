@@ -1,0 +1,92 @@
+.hero {
+  @extend %center;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+
+.hero__link-box-1 {
+  @extend %center;
+  position: relative;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: $border;
+  padding: 0 0.7rem;
+  // width: 16rem;
+  height: 26px;
+  transition: all 0.8s;
+}
+
+.hero__link-box-1::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: $color-white-e;
+  z-index: 1;
+  opacity: 0;
+  border-radius: $border;
+  transition: opacity 1s linear;
+}
+
+.hero__link-box-1:hover::before {
+  opacity: 0.3;
+}
+
+.hero__link-box-2 {
+  width: 100%;
+  height: 94%;
+  background: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-radius: $border;
+  border-width: 0.1rem;
+  border-image-source: $color-white-e;
+}
+
+.hero__link {
+  @extend %center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  background: $color-white-d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__heading {
+  font-size: 6.4rem;
+  font-weight: 600;
+  max-width: 89.2rem;
+  text-align: center;
+  background: $color-white-a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 120%;
+}
+
+.hero__paragraph {
+  width: 60.6rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.hero__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 27rem;
+  height: 6rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  margin-top: 2.5rem;
+  color: #0e5543;
+  background: $color-white-b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $border;
+}

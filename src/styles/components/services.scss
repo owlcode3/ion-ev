@@ -1,0 +1,140 @@
+.services {
+  width: 100%;
+  padding: 5rem 0;
+  font-style: normal;
+  background: #f3f1ee;
+}
+
+.services__box-1 {
+  @extend %center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 9rem;
+}
+
+.services__heading {
+  font-weight: 600;
+  font-size: 6.4rem;
+  color: $color-txt-7;
+}
+
+.services__paragraph {
+  width: 83.8rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: $color-txt-6;
+  text-align: center;
+}
+
+.services__box-2 {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "a b b"
+    "a c c";
+  gap: 3rem;
+  width: 100%;
+}
+
+.services__card--1 {
+  @extend %center;
+  flex-direction: column;
+  gap: 4.8rem;
+  // width: 100%;
+  width: 48rem;
+  height: 58rem;
+  background: $color-white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  grid-area: a;
+}
+
+.services__card--2 {
+  @extend %center;
+  align-items: flex-start;
+  // width: 90%;
+  width: 64rem;
+  height: 29rem;
+  background: $color-white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem;
+  grid-area: b;
+}
+
+.services__card--3 {
+  @extend %center;
+  align-items: flex-start;
+  // width: 90%;
+  width: 64rem;
+  height: 29rem;
+  background: $color-white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2.4rem;
+  grid-area: c;
+}
+
+.services__img {
+  width: 91%;
+}
+
+.services__img--2 {
+  width: 45.5%;
+  order: 1;
+  align-self: flex-end;
+}
+
+.services__img--3 {
+  width: 42.5%;
+  order: 1;
+  align-self: flex-end;
+}
+
+.services__texts-box {
+  @extend %center;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 91%;
+}
+
+.services__card-heading {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 120%;
+  color: $color-txt-7;
+}
+
+.services__card-paragraph {
+  width: 47.4rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+  color: $color-txt-6;
+}
+
+.services__card-paragraph--2 {
+  max-width: 32rem;
+}
+
+.services__card-paragraph--3 {
+  width: 35rem;
+}
+
+.services__link {
+  @extend %center;
+  padding: 1.6rem 0;
+  gap: 1.5rem;
+  height: 4rem;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+  color: #5caaaa;
+}

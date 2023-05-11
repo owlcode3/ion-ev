@@ -1,0 +1,85 @@
+.hww {
+  @extend %center;
+  flex-direction: column;
+  gap: 6rem;
+  font-style: normal;
+  padding: 6rem 0;
+  border-top: 0.1px solid rgb(107, 114, 128, 0.4);
+  border-bottom: 0.1px solid rgb(107, 114, 128, 0.4);
+}
+
+.hww__box-1 {
+  @extend %center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hww__heading {
+  font-weight: 500;
+  font-size: 4.8rem;
+  color: $color-txt-7;
+}
+
+.hww__paragraph {
+  line-height: 32px;
+  width: 81.9rem;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.hww__box-2 {
+  @extend %center;
+  justify-content: space-evenly;
+  width: 95%;
+}
+
+.hww__card {
+  @extend %center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.hww__img {
+  @extend %center;
+  padding: 2.4rem;
+  width: 8.5rem;
+  height: 8.8rem;
+  background: #f3f1ee;
+  border-radius: 8px;
+}
+
+.hww__card-heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-txt-7;
+  margin-bottom: 0.5rem;
+}
+
+.hww__card-paragraph {
+  width: 23rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: $color-txt-6;
+}
+
+.hww__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 20rem;
+  height: 5.5rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  margin-top: 2.5rem;
+  color: #5caaaa;
+  background: $color-white-f;
+  border: 1px solid #5caaaa;
+  border-radius: $border;
+}

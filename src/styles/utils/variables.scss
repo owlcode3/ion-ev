@@ -1,0 +1,47 @@
+$color-white-a: radial-gradient(123.44% 123.44% at 56.63% 100%, #ececee 6.77%, rgba(255, 255, 255, 0.45) 100%);
+
+$color-white-b: linear-gradient(0deg, #ffffff, #ffffff),
+  radial-gradient(84.92% 150% at 50% 138.75%, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+$color-white-c: radial-gradient(107.5% 107.5% at 50% 215%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%),
+  rgba(255, 255, 255, 0.08);
+
+$color-white-d: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 8.85%, #ffffff 100%);
+
+$color-white-e: linear-gradient(
+  89.89deg,
+  rgba(255, 255, 255, 0.1) 0.11%,
+  rgba(255, 255, 255, 0.1) 29.74%,
+  rgba(255, 255, 255, 0.5) 61.98%,
+  rgba(255, 255, 255, 0.1) 91.61%
+);
+
+$color-white-f: radial-gradient(84.92% 150% at 50% 138.75%, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%),
+  #ffffff;
+
+$color-white: #ffffff;
+
+$background-hero: radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%),
+  #032b2b;
+
+$hero-bg-color: #032b2b;
+
+$background: $color-white;
+
+$color-txt-7: #374151;
+
+$color-txt-6: #4b5563;
+
+$rza: "Rza", sans-serif;
+
+$satoshi: "Satoshi", sans-serif;
+
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+$ease-out-expo: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+$border: 999px;
+// $border-line-tertiary: 0.3px solid $color-black;
+
+$z-indexes: ("preloader", "navigation", "content", "canvas");

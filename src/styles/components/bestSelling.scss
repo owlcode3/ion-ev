@@ -1,0 +1,134 @@
+.bs {
+  @extend %center;
+  position: relative;
+  flex-direction: column;
+  gap: 4rem;
+  font-style: normal;
+  padding: 4rem 0;
+}
+
+.bs__box-1 {
+  @extend %center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 10rem;
+}
+
+.bs__heading {
+  font-weight: 500;
+  font-size: 4.8rem;
+  color: $color-txt-7;
+}
+
+.bs__paragraph {
+  line-height: 32px;
+  width: 81.9rem;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  color: #6b7280;
+}
+
+.bs__box-2 {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  width: 100%;
+
+  padding: 2rem 10rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-width: 0;
+
+  // @include respond(laptop) {
+  //   width: 100%;
+  //   justify-content: space-between;
+  //   align-items: flex-start;
+  // }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    height: 0;
+    display: none;
+  }
+}
+
+.bs__card {
+  @extend %center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bs__img-box {
+  @extend %center;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 36rem;
+  height: 38rem;
+  background-image: url(/bs-card-bg.svg);
+  border-radius: 8px;
+}
+
+.bs__img {
+  margin-bottom: -0.8rem;
+  width: 88%;
+  height: 88%;
+}
+
+.bs__texts-box {
+  @extend %center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 95%;
+}
+
+.bs__card-name {
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  color: $color-txt-7;
+}
+
+.bs__card-price {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #5caaaa;
+}
+
+.bs__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 20rem;
+  height: 5.5rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  margin-top: 2.5rem;
+  color: #5caaaa;
+  background: $color-white-f;
+  border: 1px solid #5caaaa;
+  border-radius: $border;
+}
+
+.scroll-next,
+.scroll-prev {
+  @extend %center;
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  height: 5rem;
+  width: 5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: $border;
+}
+
+.scroll-prev {
+  left: 2rem;
+}
+
+.scroll-next {
+  right: 2rem;
+}
