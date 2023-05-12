@@ -75,7 +75,7 @@ function BestSelling() {
     <section className="bs">
       <div className="bs__box-1">
         <h2 className="bs__heading">Best selling chargers</h2>
-        <p className="bs__paragraph">Don’t have a charger yet?</p>
+        <p className="bs__paragraph">Don`t have a charger yet?</p>
       </div>
 
       <ul ref={scrollRightRef} onScroll={scrolled} className="bs__box-2">
