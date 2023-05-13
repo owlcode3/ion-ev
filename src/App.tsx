@@ -1,4 +1,5 @@
 import HomeBody from "./components/layouts/HomeBody"
+import HomeFooter from "./components/layouts/HomeFooter"
 import HomeHeader from "./components/layouts/HomeHeader"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <HomeHeader />
       <HomeBody />
+      <HomeFooter />
     </div>
   )
 }

@@ -7,14 +7,14 @@ import Testimonial from "../component/Testimonial"
 
 function HomeBody() {
   return (
-    <div>
+    <>
       <Services />
       <HowWeWork />
       <BestSelling />
       <Appointment />
       <Testimonial />
       <Installation />
-    </div>
+    </>
   )
 }
 
