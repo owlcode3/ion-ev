@@ -11,13 +11,20 @@ function Installation() {
 
         <div className="installation__box-2">
           <h2 className="installation__heading">Buy and install your EV chargers with ease</h2>
-          <p className="installation__paragraph">It`s insanely easy to get EV/Hybrid charged! Follow these step by step guide.</p>
+          <p className="installation__paragraph">It's insanely easy to get EV/Hybrid charged! Follow these step by step guide.</p>
           <button className="installation__btn">Buy chargers<img src="/arrow-r.svg" alt="arrow right icon" /></button>
         </div>
 
         <div className="installation__box-3">
           <img className="installation__img installation__img--3" src="/i-charger-3.svg" alt="" />
           <img className="installation__img installation__img--4" src="/i-charger-4.svg" alt="" />
+        </div>
+
+        <div className="installation__box-4">
+          <img className="installation__img-mobile installation__img-mobile--1" src="/i-charger-1.svg" alt="" />
+          <img className="installation__img-mobile installation__img-mobile--2" src="/i-charger-2.svg" alt="" />
+          <img className="installation__img-mobile installation__img-mobile--3" src="/i-charger-3.svg" alt="" />
+          <img className="installation__img-mobile installation__img-mobile--4" src="/i-charger-4.svg" alt="" />
         </div>
       </div>
     </section>
