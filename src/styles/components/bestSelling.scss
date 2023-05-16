@@ -11,23 +11,35 @@
   @extend %center;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  padding-left: 10rem;
+  width: 91%;
+  @include media("<=phone") {
+    align-items: center;
+  }
 }
 
 .bs__heading {
   font-weight: 500;
   font-size: 4.8rem;
   color: $color-txt-7;
+  @include media("<=phone") {
+    font-size: 4.7rem;
+    text-align: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .bs__paragraph {
   line-height: 32px;
-  width: 81.9rem;
+  max-width: 81.9rem;
   font-weight: 500;
   font-size: 2.3rem;
   line-height: 3.2rem;
   color: #6b7280;
+  @include media("<=phone") {
+    font-size: 2.2rem;
+    text-align: center;
+  }
 }
 
 .bs__box-2 {
@@ -36,17 +48,19 @@
   align-items: flex-start;
   gap: 5rem;
   width: 100%;
-
-  padding: 2rem 10rem;
+  padding: 2rem 6rem;
   overflow-x: auto;
   scrollbar-width: none;
   scrollbar-width: 0;
-
-  // @include respond(laptop) {
-  //   width: 100%;
-  //   justify-content: space-between;
-  //   align-items: flex-start;
-  // }
+  @include media("<=phone") {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  @include media("<=23.125em") {
+    // 370px
+    padding: 2rem 3rem;
+  }
 
   &::-webkit-scrollbar {
     background-color: transparent;
@@ -59,6 +73,10 @@
   @extend %center;
   flex-direction: column;
   gap: 1.5rem;
+  @include media("<=23.125em") {
+    // 370px
+    width: 100%;
+  }
 }
 
 .bs__img-box {
@@ -69,6 +87,10 @@
   height: 38rem;
   background-image: url(/bs-card-bg.svg);
   border-radius: 8px;
+  @include media("<=23.125em") {
+    // 370px
+    width: 100%;
+  }
 }
 
 .bs__img {
@@ -83,6 +105,10 @@
   gap: 1.5rem;
   align-items: flex-start;
   width: 95%;
+  @include media("<=23.125em") {
+    // 370px
+    width: 100%;
+  }
 }
 
 .bs__card-name {
@@ -90,12 +116,20 @@
   font-size: 1.9rem;
   line-height: 2.4rem;
   color: $color-txt-7;
+  @include media("<=23.125em") {
+    // 370px
+    font-size: 1.5rem;
+  }
 }
 
 .bs__card-price {
   font-weight: 400;
   font-size: 1.8rem;
   color: #5caaaa;
+  @include media("<=23.125em") {
+    // 370px
+    font-size: 1.5rem;
+  }
 }
 
 .bs__btn {
@@ -123,6 +157,10 @@
   width: 5rem;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: $border;
+  @include media("<=phone") {
+    height: 0;
+    width: 0;
+  }
 }
 
 .scroll-prev {
