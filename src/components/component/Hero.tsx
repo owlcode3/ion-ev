@@ -14,7 +14,7 @@ function Hero() {
         provide you with a cost-effective and safe installation
         of your EV charging station.
       </p>
-      <button className="hero__btn">Book Appointment <img src="/arrow-r.svg" alt="arrow right icon" /></button>
+      <button className="hero__btn">Book Appointment <img className="hero__btn-icon" src="/arrow-r.svg" alt="arrow right icon" /></button>
     </div>
   )
 }

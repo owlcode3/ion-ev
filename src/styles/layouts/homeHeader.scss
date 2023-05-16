@@ -15,9 +15,9 @@
     // 700px
     padding: 2rem;
   }
-
   @include media("<40.625em") {
     // 650px
+    gap: 22rem;
   }
 }
 
