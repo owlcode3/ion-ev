@@ -34,7 +34,11 @@ function Services() {
       </div>
 
       <ul className="services__box-2">
-        {serviceDetails.map((txt, index) => <ServicesCard key={index} heading={txt.heading} paragraph={txt.paragraph} paragraphClassName={index > 0 ? `services__card-paragraph--${index + 1 as unknown as string}` : ""} img={txt.img} className={txt.cardClassName} illustrationName={txt.illustrationName} imgClassName={index > 0 ? `services__img--${index + 1 as unknown as string}` : ""} />)}
+        {serviceDetails.map((txt, index) => index === 0 ? <ServicesCard key={index} heading={txt.heading} paragraph={txt.paragraph} paragraphClassName={index > 0 ? `services__card-paragraph--${index + 1 as unknown as string}` : ""} img={txt.img} className={txt.cardClassName} illustrationName={txt.illustrationName} imgClassName={index > 0 ? `services__img--${index + 1 as unknown as string}` : ""} /> : "")}
+
+        {<div className="services__inner-card-box">
+          {serviceDetails.map((txt, index) => index > 0 && <ServicesCard key={index} heading={txt.heading} paragraph={txt.paragraph} paragraphClassName={index > 0 ? `services__card-paragraph--${index + 1 as unknown as string}` : ""} img={txt.img} className={txt.cardClassName} illustrationName={txt.illustrationName} imgClassName={index > 0 ? `services__img--${index + 1 as unknown as string}` : ""} />)}
+        </div>}
       </ul>
     </section>
   )

@@ -10,17 +10,35 @@
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
+  padding: 0 5rem;
+  @include media("<=56.25em") {
+    // 900px
+    padding: 0 3rem;
+  }
+  @include media("<=phone") {
+    margin-bottom: 5rem;
+  }
 }
 
 .services__heading {
   font-weight: 600;
   font-size: 6.4rem;
   color: $color-txt-7;
+  text-align: center;
+  line-height: 5.5rem;
+  @include media("<=56.25em") {
+    // 900px
+    font-size: 6rem;
+  }
+  @include media("<=phone") {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .services__paragraph {
-  width: 83.8rem;
+  max-width: 83.8rem;
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 3.2rem;
@@ -30,68 +48,98 @@
 
 .services__box-2 {
   list-style: none;
-  display: grid;
-  justify-content: center;
-  grid-template-areas:
-    "a b b"
-    "a c c";
-  gap: 3rem;
-  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 5rem;
+  @include media("<=56.25em") {
+    // 900px
+    padding: 1rem 3rem;
+  }
+  @include media("<=phone") {
+    flex-direction: column;
+  }
+}
+
+.services__inner-card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .services__card--1 {
   @extend %center;
   flex-direction: column;
   gap: 4.8rem;
-  // width: 100%;
-  width: 48rem;
+  // width: 48rem;
   height: 58rem;
   background: $color-white;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
-  grid-area: a;
+  @include media("<=phone") {
+    height: auto;
+    padding: 2rem;
+  }
 }
 
 .services__card--2 {
   @extend %center;
   align-items: flex-start;
-  // width: 90%;
-  width: 64rem;
-  height: 29rem;
+  // width: 64rem;
+  min-height: 29rem;
   background: $color-white;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 2rem;
-  grid-area: b;
+  @include media("<=phone") {
+    order: 1;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
 }
 
 .services__card--3 {
   @extend %center;
   align-items: flex-start;
-  // width: 90%;
-  width: 64rem;
-  height: 29rem;
+  // width: 64rem;
+  min-height: 29rem;
   background: $color-white;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 2.4rem;
-  grid-area: c;
+  @include media("<=phone") {
+    order: 0;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
 }
 
 .services__img {
   width: 91%;
+  @include media("<=phone") {
+    width: 60%;
+  }
 }
 
 .services__img--2 {
   width: 45.5%;
   order: 1;
   align-self: flex-end;
+  @include media("<=phone") {
+    order: 0;
+    width: 60%;
+    align-self: center;
+  }
 }
 
 .services__img--3 {
   width: 42.5%;
   order: 1;
   align-self: flex-end;
+  @include media("<=phone") {
+    order: 0;
+    width: 60%;
+    align-self: center;
+  }
 }
 
 .services__texts-box {
@@ -100,6 +148,9 @@
   flex-direction: column;
   align-items: flex-start;
   width: 91%;
+  @include media("<=phone") {
+    width: 100%;
+  }
 }
 
 .services__card-heading {
@@ -110,20 +161,30 @@
 }
 
 .services__card-paragraph {
-  width: 47.4rem;
+  max-width: 47.4rem;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 140%;
   letter-spacing: 0.5px;
   color: $color-txt-6;
+  @include media("<=phone") {
+    max-width: 50rem;
+  }
 }
 
 .services__card-paragraph--2 {
   max-width: 32rem;
+  @include media("<=phone") {
+    // max-width: 35rem;
+    max-width: 45rem;
+  }
 }
 
 .services__card-paragraph--3 {
-  width: 35rem;
+  max-width: 35rem;
+  @include media("<=phone") {
+    max-width: 48rem;
+  }
 }
 
 .services__link {
