@@ -2,11 +2,23 @@
   background: #f3f1ee;
   font-style: normal;
   padding: 7rem 9rem;
+  @include media("<=68.125em") {
+    // 1090px
+    padding: 7rem 5rem;
+  }
+  @include media("<=28.75em") {
+    // 460px
+    padding: 7rem 0;
+  }
 }
 
 .testimonial__box-1 {
   width: 100%;
   margin-bottom: 5rem;
+  @include media("<=28.75em") {
+    // 460px
+    padding: 0 2rem;
+  }
 }
 
 .testimonial__heading {
@@ -16,6 +28,10 @@
   margin-bottom: 0.5rem;
   text-align: center;
   color: $color-txt-7;
+  @include media("<=phone") {
+    font-size: 4.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .testimonial__paragraph {
@@ -23,6 +39,13 @@
   font-size: 2.3rem;
   line-height: 3.2rem;
   color: #6b7280;
+  @include media("<=68.125em") {
+    // 1090 px
+    text-align: center;
+  }
+  @include media("<=phone") {
+    font-size: 2rem;
+  }
 }
 
 .testimonial__lists {
@@ -30,6 +53,10 @@
   width: 100%;
   height: 43rem;
   overflow: hidden;
+  @include media("<=phone") {
+    height: 65rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .testimonial__list {
@@ -40,6 +67,14 @@
   height: 100%;
   width: 100%;
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  @include media("<=62.5em") {
+    // 1000px
+    gap: 4rem;
+  }
+  @include media("<=phone") {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .testimonial__inner-paragraph {
@@ -50,6 +85,20 @@
   display: flex;
   align-items: center;
   color: $color-txt-7;
+  @include media("<=62.5em") {
+    // 1000px
+    font-size: 2.5rem;
+    max-width: 40rem;
+  }
+  @include media("<=53.125em") {
+    // 850px
+    font-size: 2rem;
+  }
+  @include media("<=25em") {
+    // 400px
+    padding: 0 1.5rem;
+    text-align: left;
+  }
 }
 
 .testimonial__inner-img {
@@ -57,6 +106,10 @@
   height: 100%;
   border-radius: 8px;
   object-fit: cover;
+  @include media("<=25em") {
+    // 400px
+    border-radius: 0;
+  }
 }
 
 .testimonial__inner-name {
@@ -66,20 +119,36 @@
   font-weight: 400;
   font-size: 3.2rem;
   color: $color-white;
+  @include media("<=25em") {
+    // 400px
+    font-size: 2rem;
+  }
 }
 
 .testimonial__inner-box--1 {
   width: 60%;
+  @include media("<=phone") {
+    order: 1;
+    text-align: center;
+    width: auto;
+  }
 }
 
 .testimonial__inner-box--2 {
   @extend %center;
   position: relative;
-  // width: 36%;
   width: 41rem;
   height: 96%;
   overflow: hidden;
   border-radius: 8px;
+  @include media("<=phone") {
+    order: 0;
+  }
+  @include media("<=25em") {
+    // 400px
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 .testimonial__box-3 {
@@ -88,12 +157,18 @@
   justify-content: space-between;
   width: 100%;
   height: 15rem;
+  @include media("<=phone") {
+    height: 4rem;
+  }
 }
 
 .testimonial__icons-box {
   @extend %center;
   justify-content: flex-start;
   gap: 3rem;
+  @include media("<=phone") {
+    justify-content: center;
+  }
 }
 
 .testimonial__icon-box {
@@ -104,6 +179,7 @@
   border: 0.5px solid $color-txt-7;
   border-radius: 64px;
   transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .testimonial__icon-box:hover {
@@ -112,6 +188,11 @@
 
 .testimonial__line-box {
   @extend %center;
+  @include media("<=phone") {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 }
 
 .testimonial__line {
