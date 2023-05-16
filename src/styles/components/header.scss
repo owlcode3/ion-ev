@@ -4,6 +4,7 @@
   font-family: $satoshi;
   font-style: normal;
   font-weight: 400;
+  z-index: 999;
 }
 
 .header__logo {
@@ -33,6 +34,10 @@
   height: 4rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 999px;
+  @include media("<=40.625em") {
+    // 650px
+    display: none;
+  }
 }
 
 .header__link {
@@ -48,6 +53,10 @@
   @extend %center;
   gap: 2rem;
   color: $color-white;
+  @include media("<=40.625em") {
+    // 650px
+    display: none;
+  }
 }
 
 .header__search-icon-box {
@@ -65,4 +74,54 @@
 
 .header__cart-no {
   opacity: 0.6;
+}
+
+.header__checkbox {
+  display: none;
+  @include media("<=40.625em") {
+    // 650px
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    width: 3rem;
+    height: 2.6rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+  }
+}
+
+.header__hamburger {
+  display: none;
+  @include media("<=40.625em") {
+    // 650px
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    height: 100%;
+  }
+}
+
+.header__hamburger-line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: $color-white;
+  border-radius: $border;
+  transition: all 0.2s;
+}
+
+.header__checkbox:checked ~ .header__hamburger .header__hamburger-line:nth-child(1) {
+  transform: rotate(130deg);
+}
+
+.header__checkbox:checked ~ .header__hamburger .header__hamburger-line:nth-child(2) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.header__checkbox:checked ~ .header__hamburger .header__hamburger-line {
+  width: 2rem;
 }

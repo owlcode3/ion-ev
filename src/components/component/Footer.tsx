@@ -41,9 +41,9 @@ function Footer() {
             © 2023 ion ev . All rights reserved.
           </li>
           <li className="footer__icons">
-            <span className="footer__icon-box"><img className="footer__icon" src="/public/twitter-icon.svg" alt="twitter icon" /></span>
-            <span className="footer__icon-box"><img className="footer__icon" src="/public/facebook-icon.svg" alt="facebook icon" /></span>
-            <span className="footer__icon-box"><img className="footer__icon" src="/public/linkedin-icon.svg" alt="linkedin icon" /></span>
+            <span className="footer__icon-box"><img className="footer__icon" src="/twitter-icon.svg" alt="twitter icon" /></span>
+            <span className="footer__icon-box"><img className="footer__icon" src="/facebook-icon.svg" alt="facebook icon" /></span>
+            <span className="footer__icon-box"><img className="footer__icon" src="/linkedin-icon.svg" alt="linkedin icon" /></span>
           </li>
         </ul>
       </div>

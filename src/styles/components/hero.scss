@@ -5,6 +5,12 @@
   font-weight: 400;
   font-style: normal;
   width: 100%;
+  @include media("<=28.4375em") {
+    // 455px
+    width: 95%;
+    gap: 2.5rem;
+    margin: 0 auto;
+  }
 }
 
 .hero__link-box-1 {
@@ -14,7 +20,6 @@
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: $border;
   padding: 0 0.7rem;
-  // width: 16rem;
   height: 26px;
   transition: all 0.8s;
 }
@@ -67,13 +72,34 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 120%;
+  @include media("<=36.25em") {
+    // 580px
+    font-size: 5rem;
+  }
+  @include media("<=29.375em") {
+    // 470px
+    font-size: 4rem;
+  }
+  @include media("<=28.4375em") {
+    // 455px
+    font-size: 3rem;
+    max-width: 40rem;
+  }
 }
 
 .hero__paragraph {
-  width: 60.6rem;
+  max-width: 60.6rem;
   font-size: 1.6rem;
   text-align: center;
   color: rgb(255, 255, 255, 0.6);
+  @include media("<=36.25em") {
+    // 580px
+    max-width: 50rem;
+  }
+  @include media("<=29.375em") {
+    // 470px
+    max-width: 40rem;
+  }
 }
 
 .hero__btn {
@@ -89,4 +115,10 @@
   background: $color-white-b;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: $border;
+  @include media("<=28.4375em") {
+    // 455px
+    font-size: 1.5rem;
+    width: 24rem;
+    padding: 1rem 3rem;
+  }
 }

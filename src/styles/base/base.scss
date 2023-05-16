@@ -8,8 +8,13 @@
 
 html {
   font-size: 62.5%;
-  @include media("<phone") {
+  @include media("<=phone") {
     font-size: 56.5%;
+  }
+
+  @include media("<=40.625em") {
+    // 650px
+    font-size: 50%;
   }
 }
 
