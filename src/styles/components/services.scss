@@ -49,6 +49,7 @@
 .services__box-2 {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 2rem;
   padding: 1rem 5rem;
   @include media("<=56.25em") {
