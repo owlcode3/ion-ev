@@ -1,4 +1,4 @@
-import Footer from '../component/Footer'
+import Footer from '../../component/Footer'
 
 
 function HomeFooter() {

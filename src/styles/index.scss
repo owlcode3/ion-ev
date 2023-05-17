@@ -29,11 +29,13 @@
 
 @import "./components/appointment";
 @import "./components/bestSelling";
+@import "./components/cart";
 @import "./components/footer";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/howWeWork";
 @import "./components/installation";
+@import "./components/logo";
 @import "./components/services";
 @import "./components/testimonial";
 
@@ -44,6 +46,10 @@
 @import "./layouts/homeBody";
 @import "./layouts/homeFooter";
 @import "./layouts/homeHeader";
+
+@import "./layouts/shopBody";
+@import "./layouts/shopFooter";
+@import "./layouts/shopHeader";
 
 // ------------------------------------ // ------------------------------------------
 // -------------------------- P A G E S  D I R E C T O R Y --------------------------

@@ -1,4 +1,6 @@
-.hero {
+// HOME
+
+.hero-home {
   @extend %center;
   flex-direction: column;
   gap: 2rem;
@@ -16,7 +18,7 @@
   }
 }
 
-.hero__link-box-1 {
+.hero-home__link-box-1 {
   @extend %center;
   position: relative;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -27,7 +29,7 @@
   transition: all 0.8s;
 }
 
-.hero__link-box-1::before {
+.hero-home__link-box-1::before {
   position: absolute;
   content: "";
   inset: 0;
@@ -38,11 +40,11 @@
   transition: opacity 1s linear;
 }
 
-.hero__link-box-1:hover::before {
+.hero-home__link-box-1:hover::before {
   opacity: 0.3;
 }
 
-.hero__link-box-2 {
+.hero-home__link-box-2 {
   width: 100%;
   height: 94%;
   background: none;
@@ -54,7 +56,7 @@
   border-image-source: $color-white-e;
 }
 
-.hero__link {
+.hero-home__link {
   @extend %center;
   width: 100%;
   height: 100%;
@@ -65,7 +67,7 @@
   background-clip: text;
 }
 
-.hero__heading {
+.hero-home__heading {
   font-size: 6.4rem;
   font-weight: 600;
   max-width: 89.2rem;
@@ -90,7 +92,7 @@
   }
 }
 
-.hero__paragraph {
+.hero-home__paragraph {
   max-width: 60.6rem;
   font-size: 1.6rem;
   text-align: center;
@@ -105,7 +107,7 @@
   }
 }
 
-.hero__btn {
+.hero-home__btn {
   @extend %center;
   justify-content: space-around;
   gap: 1rem;
@@ -126,9 +128,49 @@
   }
 }
 
-.hero__btn-icon {
+.hero-home__btn-icon {
   @include media("<=28.4375em") {
     // 455px
     width: 2rem;
+  }
+}
+
+// SHOP
+
+.hero-shop {
+  font-style: normal;
+  color: $color-txt-7;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.hero-shop__box-1 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 1rem;
+}
+
+.hero-shop__line {
+  display: block;
+  width: 4rem;
+  height: 0.1rem;
+  background-color: $color-txt-7;
+}
+
+.hero-shop__name {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.hero-shop__text {
+  max-width: 39.5rem;
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 120%;
+  @include media("<=22.0625em") {
+    // 353px
+    font-size: 2.8rem;
   }
 }

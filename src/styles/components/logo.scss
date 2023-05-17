@@ -1,0 +1,38 @@
+.logo-white {
+  @extend %center;
+  gap: 1rem;
+  color: $color-white;
+}
+
+.logo-white__icon-box {
+  background: #f7fcfc;
+  @extend %center;
+  width: 3.6rem;
+  height: 3.6rem;
+  box-shadow: 4px 4px 4px rgba(17, 17, 17, 0.25);
+  border-radius: 8px;
+}
+
+.logo-white__text-box {
+  font-size: 2.8rem;
+}
+
+.logo-green {
+  @extend %center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.logo-green__icon-box {
+  background: #086b6b;
+  @extend %center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 8px;
+}
+
+.logo-green__text-box {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: $color-txt-7;
+}

@@ -1,0 +1,30 @@
+.cart {
+  @extend %center;
+  gap: 2rem;
+  color: $color-white;
+  @include media("<=40.625em") {
+    // 650px
+    display: none;
+  }
+}
+
+.cart-for-shop {
+  color: $color-txt-7;
+}
+
+.cart__search-icon-box {
+  @extend %center;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.cart__text-box {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 6rem;
+}
+
+.cart__no {
+  opacity: 0.7;
+}

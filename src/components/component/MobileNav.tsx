@@ -1,20 +1,23 @@
 import { Link } from "react-router-dom"
 
 type Props = {
-  menuState: boolean
+  menuState: boolean,
+  mobileNavParentCn: string,
+  mobileNavLinkCn: string,
+
 }
 
-function MobileNav({ menuState }: Props) {
+function MobileNav({ menuState, mobileNavParentCn, mobileNavLinkCn }: Props) {
 
 
   return (
-    <div className="home-header__mobile-nav" style={{
+    <div className={"home-header__mobile-nav" + " " + `${mobileNavParentCn}`} style={{
       opacity: menuState ? 1 : 0, zIndex: menuState ? 998 : -1
     }}>
-      <Link className="home-header__link home-header__nav" to="/">Home</Link>
-      <Link className="home-header__link home-header__nav" to="/">Installation</Link>
-      <Link className="home-header__link home-header__nav" to="/">Shop</Link>
-      <div className="home-header__cart-text-box home-header__nav"><span>Cart</span> <span className="home-header__cart-no">0</span></div>
+      <Link className={mobileNavLinkCn} to="/">Home</Link>
+      <Link className={mobileNavLinkCn} to="/installation">Installation</Link>
+      <Link className={mobileNavLinkCn} to="/shop">Shop</Link>
+      <div className={"home-header__cart-text-box" + " " + `${mobileNavLinkCn}`}><span>Cart</span> <span className="home-header__cart-no">0</span></div>
     </div>)
 }
 

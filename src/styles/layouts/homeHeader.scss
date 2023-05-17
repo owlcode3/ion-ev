@@ -38,18 +38,18 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.home-header__nav {
-  font-weight: 400;
-  font-size: 3rem;
-  background: $color-white-a;
+.home-header__nav:nth-child(1) {
+  background: $color-white;
   text-transform: capitalize;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.home-header__link:nth-child(1) {
-  background: $color-white;
+.home-header__nav {
+  font-weight: 400;
+  font-size: 3rem;
+  background: $color-white-a;
   text-transform: capitalize;
   -webkit-background-clip: text;
   background-clip: text;

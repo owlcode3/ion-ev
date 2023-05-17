@@ -1,15 +1,14 @@
-import HomeBody from "./components/layouts/HomeBody"
-import HomeFooter from "./components/layouts/HomeFooter"
-import HomeHeader from "./components/layouts/HomeHeader"
+import { Route, Routes } from "react-router-dom"
+import Home from "./components/pages/Home"
+import Shop from "./components/pages/Shop"
 
 function App() {
 
   return (
-    <div>
-      <HomeHeader />
-      <HomeBody />
-      <HomeFooter />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/shop" element={<Shop />} />
+    </Routes>
   )
 }
 

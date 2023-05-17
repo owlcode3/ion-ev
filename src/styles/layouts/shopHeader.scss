@@ -1,0 +1,43 @@
+.shop-header {
+  @extend %center;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 15rem;
+  background-image: url(/shop-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75.4rem;
+  padding: 3rem 5rem;
+  @include media("<=phone") {
+    gap: 20rem;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 2rem;
+    gap: 25rem;
+  }
+  @include media("<=40.625em") {
+    // 650px
+    gap: 36rem;
+  }
+}
+
+.shop-header__mobile-nav {
+  background: $color-white-h;
+}
+
+.shop-header__nav-:nth-child(1) {
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: $color-txt-7;
+}
+
+.shop-header__nav {
+  font-weight: 400;
+  font-size: 3rem;
+  color: $color-txt-7;
+}

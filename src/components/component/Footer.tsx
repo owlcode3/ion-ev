@@ -1,3 +1,4 @@
+import LogoGreen from "./LogoGreen"
 
 
 function Footer() {
@@ -6,9 +7,7 @@ function Footer() {
       <div className="footer__boxes">
         <ul className="footer__box-1">
           <li className="footer__details footer__details--1">
-            <div className="footer__logo">
-              <span className="footer__logo-icon-box"><img src="/logo-2.svg" alt="logo" /></span> <span className="footer__logo-text-box">ion ev</span>
-            </div>
+            <LogoGreen />
             <span className="footer__paragraph">
               Buy EV chargers. Book appointments with one of our agents to get your charger installed properly.
             </span>
