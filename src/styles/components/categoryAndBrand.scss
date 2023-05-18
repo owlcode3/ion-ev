@@ -1,0 +1,51 @@
+.category-brand {
+  width: 100%;
+  height: 25rem;
+  font-style: normal;
+  background: $color-white;
+  border-top: 0.5rem solid #000000;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.category-brand__lists {
+  height: 100%;
+  width: 129rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+.category-brand__list {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.category-brand__cate-name {
+  font-weight: 500;
+  font-size: 2.1rem;
+  color: $color-txt-7;
+}
+
+.category-brand__inner-lists {
+  @extend %center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.category-brand__inner-list:nth-child(1) {
+  @extend %center;
+  padding: 1rem 1.2rem;
+  background: #f3f1ee;
+  border-radius: 100px;
+}
+
+.category-brand__inner-list {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: #6b7280;
+}
