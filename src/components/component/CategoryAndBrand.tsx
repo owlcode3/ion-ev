@@ -6,7 +6,7 @@ function CategoryAndBrand() {
       <ul className="category-brand__lists">
         <li className="category-brand__list">
           <span className="category-brand__cate-name">
-            Categories:<img className="category-brand__icon" src="/Arrow - Down 2.svg" alt="arrow down" />
+            Categories:
           </span>
           <ul className="category-brand__inner-lists">
             <li className="category-brand__inner-list">
@@ -34,8 +34,6 @@ function CategoryAndBrand() {
 
           <div className="category-brand__options">
             <select className="category-brand__select" name="categories" id="categories">
-              <option className="category-brand__option" value="">
-              </option>
               <option className="category-brand__option" value="All products">
                 All products
               </option>
@@ -62,7 +60,7 @@ function CategoryAndBrand() {
         </li>
 
         <li className="category-brand__list">
-          <span className="category-brand__cate-name">Car Brand:<img className="category-brand__icon" src="/Arrow - Down 2.svg" alt="arrow down" /></span>
+          <span className="category-brand__cate-name">Car Brand:</span>
           <ul className="category-brand__inner-lists">
             <li className="category-brand__inner-list">
               Audi
@@ -91,9 +89,7 @@ function CategoryAndBrand() {
           </ul>
 
           <div className="category-brand__options">
-            <select className="category-brand__select" name="categories" id="categories">
-              <option className="category-brand__option" value="">
-              </option>
+            <select className="category-brand__select" name="card brand" id="car brand">
               <option className="category-brand__option" value="Audi">
                 Audi
               </option>
