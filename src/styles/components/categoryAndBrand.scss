@@ -77,4 +77,15 @@
     // 620px
     display: flex;
   }
+  @include media("<=23.125em") {
+    // 370px
+    width: 10rem;
+  }
+}
+
+.category-brand__select {
+  @include media("<=23.125em") {
+    // 370px
+    width: 100%;
+  }
 }

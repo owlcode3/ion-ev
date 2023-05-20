@@ -41,7 +41,7 @@ function Testimonial() {
         <p className="testimonial__paragraph">Here’s what some of our customers says about us.</p>
       </div>
       <ul className="testimonial__lists">
-        {cardDetails.map((card, index) => <TestimonialCard paragraph={card.paragraph} name={card.name} img={card.img} index={index} slide={slideX} />)}
+        {cardDetails.map((card, index) => <TestimonialCard key={index} paragraph={card.paragraph} name={card.name} img={card.img} index={index} slide={slideX} />)}
       </ul>
       <div className="testimonial__box-3">
         <div className="testimonial__icons-box">
