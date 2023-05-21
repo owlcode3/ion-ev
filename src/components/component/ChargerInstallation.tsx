@@ -67,7 +67,7 @@ function ChargerInstallation() {
     }
   };
   return (
-    <section className="residential">
+    <section className="residential residential--ci">
       <div className="residential__box-1">
         <h2 className="residential__heading">Ev Charger Installation</h2>
       </div>

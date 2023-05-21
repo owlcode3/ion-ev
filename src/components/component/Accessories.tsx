@@ -100,7 +100,7 @@ function Accessories() {
         )}
       </ul>
 
-      <div className="residential__unknown">Don't know which to choose?<Link className="residential__learn-more" to="/">Learn more</Link></div>
+      <button className="residential__btn">see more <img src="/arrow-bowl.svg" alt="arrow" /></button>
     </section>
   )
 }
