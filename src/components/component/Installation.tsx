@@ -1,5 +1,4 @@
 
-
 function Installation() {
   return (
     <section className="installation">

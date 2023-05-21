@@ -4,6 +4,7 @@ import CategoryAndBrand from "../../component/CategoryAndBrand"
 import ChargerInstallation from "../../component/ChargerInstallation"
 import Charging from "../../component/Charging"
 import Commercial from "../../component/Commercial"
+import OnlineSpecialist from "../../component/OnlineSpecialist"
 import Residential from "../../component/Residential"
 
 
@@ -17,6 +18,7 @@ function ShopBody() {
       <Adapters />
       <Charging />
       <ChargerInstallation />
+      <OnlineSpecialist />
     </div>
   )
 }

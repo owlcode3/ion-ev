@@ -14,19 +14,19 @@ function ChargerInstallation() {
     {
       name: "Residential EV Charger Installation | Single Phase",
       price: "$990",
-      Img: "/eci-img-1.svg",
+      Img: "/ec-img-1.svg",
       altName: "product card"
     },
     {
       name: "Residential EV Charger Installation | Three Phase",
       price: "$1,175",
-      Img: "/eci-img-2.svg",
+      Img: "/ec-img-2.svg",
       altName: "product card"
     },
     {
       name: "Residential EV Charger Installation | Two Phase",
       price: "$1,098",
-      Img: "/eci-img-3.svg",
+      Img: "/ec-img-3.svg",
       altName: "product card"
     },
     {

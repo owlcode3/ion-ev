@@ -1,0 +1,157 @@
+.os {
+  @extend %center;
+  width: 100%;
+  height: 56rem;
+  background: $color-white;
+  font-style: normal;
+  border-top: 0.1px solid rgb(107, 114, 128, 0.1);
+  border-bottom: 0.1px solid rgb(107, 114, 128, 0.1);
+  @include media("<=56.25em") {
+    // 900px
+    height: 60rem;
+  }
+  @include media("<=phone") {
+    height: 60rem;
+  }
+  @include media("<=25.9375") {
+    // 415px
+    height: 62rem;
+  }
+}
+
+.os__boxes {
+  display: flex;
+  justify-content: space-between;
+  background: $background-hero;
+  background-position: 30% 20%;
+  background-image: url(/appointment-background.svg);
+  width: 92%;
+  height: 45rem;
+  border-radius: 40px;
+  overflow: hidden;
+  @include media("<=56.25em") {
+    // 900px
+    padding-top: 0;
+    padding: 5rem 3rem 0 3rem;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  @include media("<=phone") {
+    width: 100%;
+    border-radius: 0;
+  }
+  @include media("<=25.9375em") {
+    // 415px
+    height: 62rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.os__box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  gap: 0.5rem;
+  width: 55%;
+  @include media("<=56.25em") {
+    // 900px
+    width: 100%;
+    padding: 0;
+  }
+  @include media("<=25.9375em") {
+    // 415px
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.os__heading {
+  max-width: 75rem;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 128%;
+  background: $color-white-a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  @include media("<=tablet") {
+    font-size: 4rem;
+  }
+  @include media("<=56.25em") {
+    // 900px
+    font-size: 3.5rem;
+    max-width: 95rem;
+  }
+  @include media("<=25.9375em") {
+    // 415px
+    font-size: 3rem;
+  }
+}
+
+.os__paragraph {
+  max-width: 70rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  color: $color-white;
+  text-align: center;
+  @include media("<=tablet") {
+    font-size: 2rem;
+  }
+  @include media("<=56.25em") {
+    // 900px
+    font-size: 1.6rem;
+    max-width: 95rem;
+  }
+  @include media("<=25.9375em") {
+    // 415px
+    font-size: 1.5rem;
+  }
+}
+
+.os__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 32rem;
+  height: 5.9rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  margin-top: 2.5rem;
+  color: #0e5543;
+  background: $color-white-f;
+  border-radius: $border;
+  border: 1px solid #ffffff1a;
+  @include media("<=56.25em") {
+    // 900px
+    margin-top: 2.5rem;
+  }
+  @include media("<=26em") {
+    // 416px
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    width: 23rem;
+  }
+}
+
+.os__box-2 {
+  @extend %center;
+  align-items: flex-end;
+  width: 50%;
+  opacity: 0.8;
+  overflow: hidden;
+  @include media("<=56.25em") {
+    // 900px
+    width: 100%;
+  }
+}
+
+.os__img {
+  height: 93%;
+}
