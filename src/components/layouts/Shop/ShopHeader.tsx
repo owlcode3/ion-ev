@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "../../component/Header";
 import HeroShop from "../../component/HeroShop";
 import MobileNav from "../../component/MobileNav";
+import AllProducts from "../../component/AllProducts";
 
 
 function ShopHeader() {
@@ -23,6 +24,7 @@ function ShopHeader() {
     <div className="shop-header">
       <Header setMenuState={setIsMenuOpen} menuState={isMenuOpen} linkParentCn="header__nav-for-shop" linkChildCn="header__link-for-shop" WhatLogo={false} cartParentCn="cart-for-shop" cartIcon="/search-icon-black.svg" hamburgerCn="header__hamburger-line-for-shop" />
       <HeroShop />
+      <AllProducts />
       <MobileNav menuState={isMenuOpen} mobileNavParentCn="shop-header__mobile-nav" mobileNavLinkCn="shop-header__nav" />
     </div>
   )

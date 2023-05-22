@@ -1,0 +1,24 @@
+.all-products__lists {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.all-products__list:nth-child(1) {
+  background: #525257;
+  color: $color-white;
+}
+
+.all-products__list {
+  @extend %center;
+  gap: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: #525257;
+  padding: 1rem 1.2rem;
+  border: 0.5px solid #525257;
+  border-radius: 100px;
+}
