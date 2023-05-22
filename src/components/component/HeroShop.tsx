@@ -10,7 +10,7 @@ function HeroShop() {
 
       <div className="hero-shop__box-2">
         <h2 className="hero-shop__text">
-          Browse to checkout today’s top selling chargers
+          Browse to checkout today's top selling chargers.
         </h2>
       </div>
     </div>

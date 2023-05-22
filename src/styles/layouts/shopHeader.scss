@@ -1,17 +1,4 @@
 .shop-header {
-  // @extend %center;
-  // position: relative;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: stretch;
-  // gap: 15rem;
-  // background-image: url(/shop-bg.svg);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // height: 75.4rem;
-
-  // @extend %center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,18 +7,9 @@
   height: 54rem;
   background: #f3f1ee;
   border-bottom: 0.1px solid rgb(0, 0, 0, 0.4);
-
-  @include media("<=phone") {
-    gap: 20rem;
-  }
   @include media("<=43.75em") {
     // 700px
     padding: 2rem;
-    gap: 25rem;
-  }
-  @include media("<=40.625em") {
-    // 650px
-    gap: 36rem;
   }
 }
 
