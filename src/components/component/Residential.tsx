@@ -52,7 +52,7 @@ function Residential() {
     <section className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
-          tag="Residential" text="Charge from the comfort of your house." />
+          tag="Residential" text="Charge from the comfort of your house." iconSrc="/safe-home.svg" />
         {residentialDetail.map(txt => (
           <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}

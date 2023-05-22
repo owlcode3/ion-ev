@@ -10,38 +10,38 @@ type RDT = {
 
 function Accessories() {
 
-  const commercialDetail: RDT = [
+  const accessoriesDetail: RDT = [
     {
-      names: ["Juice Commercial charging", "Juice Ultra"],
-      price: "$1,990",
-      Img: "/c-image-1.svg",
+      names: ["Mennekes EV Accessories", "Type 2 Inlet"],
+      price: "$35",
+      Img: "/eac-image-1.svg",
       altName: "product card",
     },
     {
-      names: ["Juice Commercial charging", "Juice Director (2)"],
-      price: "$2,000",
-      Img: "/c-image-2.svg",
-      altName: "product card"
-    },
-
-    {
-      names: ["Tesla Home charging", "Wall Connector (3)"],
+      names: ["Tesla Accessories", "Cable & Plug holder"],
       price: "$450",
-      Img: "/r-image-3.svg",
+      Img: "/eac-image-2.svg",
       altName: "product card"
     },
 
     {
-      names: ["Tesla Home charging", "Wall Connector (3)"],
-      price: "$850",
-      Img: "/r-image-4.svg",
+      names: ["Tesla Accessories", "Portable cable bag"],
+      price: "$450",
+      Img: "/eac-image-3.svg",
       altName: "product card"
     },
 
     {
-      names: ["Juice Home charging", "Wall Connector (3)"],
+      names: ["Tesla Accessories", "Female Socket"],
+      price: "$450",
+      Img: "/eac-image-4.svg",
+      altName: "product card"
+    },
+
+    {
+      names: ["Juice Home charging", "??????"],
       price: "$600",
-      Img: "/r-image-5.svg",
+      Img: "eac-image-5.svg",
       altName: "product card"
     },
 
@@ -52,8 +52,8 @@ function Accessories() {
     <section className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
-          tag="Commercial" text="Charging as a service." />
-        {commercialDetail.map(txt => (
+          tag="EV Accessories" text="Get everything EV and more." iconSrc="/recharging.svg" />
+        {accessoriesDetail.map(txt => (
           <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
       </ul>

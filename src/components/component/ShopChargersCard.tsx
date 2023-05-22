@@ -15,7 +15,7 @@ function ShopChargersCard({ names, price, img, altName }: Props) {
       </div>
       <div className="residential__texts-box">
         <div className="residential__name-box">
-          <span className="residential__card-name-1">{names[0].split(" ")[0]} <span className="residential__dot"></span> {names[0].split(" ")[1]} {names[0].split(" ")[2]}</span>
+          <span className="residential__card-name-1">{names[0].split(" ")[0].replace(",", " ")} <span className="residential__dot"></span> {names[0].split(" ")[1]} {names[0].split(" ")[2]}</span>
           <span className="residential__card-name-2">{names[1]}</span>
         </div>
         <span className="residential__card-price">{price}</span>

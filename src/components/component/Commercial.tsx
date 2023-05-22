@@ -1,7 +1,7 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
 
-type RDT = {
+type CDT = {
   names: [string, string],
   price: string,
   Img: string,
@@ -10,7 +10,7 @@ type RDT = {
 
 function Commercial() {
 
-  const commercialDetail: RDT = [
+  const commercialDetail: CDT = [
     {
       names: ["Juice Commercial charging", "Juice Ultra"],
       price: "$1,990",
@@ -25,23 +25,23 @@ function Commercial() {
     },
 
     {
-      names: ["Tesla Home charging", "Wall Connector (3)"],
-      price: "$450",
-      Img: "/r-image-3.svg",
+      names: ["Ocular Home charging", "Titan Combi DC"],
+      price: "$1,200",
+      Img: "/c-image-3.svg",
       altName: "product card"
     },
 
     {
-      names: ["Tesla Home charging", "Wall Connector (3)"],
-      price: "$850",
-      Img: "/r-image-4.svg",
+      names: ["EV,Link Home charging", "Dual Port 4"],
+      price: "$2,050",
+      Img: "/c-image-4.svg",
       altName: "product card"
     },
 
     {
-      names: ["Juice Home charging", "Wall Connector (3)"],
+      names: ["Juice Home charging", "??????????"],
       price: "$600",
-      Img: "/r-image-5.svg",
+      Img: "/c-image-5.svg",
       altName: "product card"
     },
 
@@ -52,7 +52,7 @@ function Commercial() {
     <section className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
-          tag="Commercial" text="Charging as a service." />
+          tag="Commercial" text="Charging as a service." iconSrc="/buliding.svg" />
         {commercialDetail.map(txt => (
           <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
