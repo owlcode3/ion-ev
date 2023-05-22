@@ -11,6 +11,11 @@
     // 700px
     padding: 2rem;
   }
+  @include media("<=18.125em") {
+    // 290px
+    padding: 1.5rem;
+    height: 56rem;
+  }
 }
 
 .shop-header__mobile-nav {

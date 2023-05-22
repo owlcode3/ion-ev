@@ -173,4 +173,8 @@
     // 353px
     font-size: 2.8rem;
   }
+  @include media("<=18.125em") {
+    // 290px
+    font-size: 2.6rem;
+  }
 }
