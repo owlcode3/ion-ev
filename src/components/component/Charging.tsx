@@ -1,16 +1,10 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
-
-type CDT = {
-  names: [string, string],
-  price: string,
-  Img: string,
-  altName: string,
-}[]
+import { ProductDetails } from "../../types";
 
 function Charging() {
 
-  const chargingDetail: CDT = [
+  const chargingDetail: ProductDetails = [
     {
       names: ["Juice Charging Cables", "Juice Booster (2)"],
       price: "$35",

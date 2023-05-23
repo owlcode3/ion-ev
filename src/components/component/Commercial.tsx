@@ -1,16 +1,11 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
+import { ProductDetails } from "../../types";
 
-type CDT = {
-  names: [string, string],
-  price: string,
-  Img: string,
-  altName: string,
-}[]
 
 function Commercial() {
 
-  const commercialDetail: CDT = [
+  const commercialDetail: ProductDetails = [
     {
       names: ["Juice Commercial charging", "Juice Ultra"],
       price: "$1,990",

@@ -1,16 +1,10 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
-
-type RDT = {
-  names: [string, string],
-  price: string,
-  Img: string,
-  altName: string,
-}[]
+import { ProductDetails } from "../../types";
 
 function Residential() {
 
-  const residentialDetail: RDT = [
+  const residentialDetail: ProductDetails = [
     {
       names: ["Tesla Home charging", "Wall Connector (3)"],
       price: "$450",

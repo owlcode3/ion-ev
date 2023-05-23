@@ -1,16 +1,10 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
-
-type ADT = {
-  names: [string, string],
-  price: string,
-  Img: string,
-  altName: string,
-}[]
+import { ProductDetails } from "../../types";
 
 function Adapters() {
 
-  const adapterDetail: ADT = [
+  const adapterDetail: ProductDetails = [
     {
       names: ["Zaptec Charging Adapter", "Zaptec Go"],
       price: "$65",

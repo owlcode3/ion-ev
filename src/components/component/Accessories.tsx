@@ -1,16 +1,12 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
+import { ProductDetails } from "../../types";
 
-type RDT = {
-  names: [string, string],
-  price: string,
-  Img: string,
-  altName: string,
-}[]
+
 
 function Accessories() {
 
-  const accessoriesDetail: RDT = [
+  const accessoriesDetail: ProductDetails = [
     {
       names: ["Mennekes EV Accessories", "Type 2 Inlet"],
       price: "$35",
