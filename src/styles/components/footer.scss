@@ -43,7 +43,7 @@
 
 .footer__box-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -82,11 +82,24 @@
   color: $color-txt-7;
 }
 
-.footer__icons {
-  @extend %center;
-  gap: 2rem;
+// .footer__icons {
+//   @extend %center;
+//   gap: 2rem;
+// }
+
+// .footer__icon-box {
+//   cursor: pointer;
+// }
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  color: $color-txt-7;
 }
 
-.footer__icon-box {
+.footer__external-link {
   cursor: pointer;
+  font-weight: 400;
 }

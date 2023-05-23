@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import LogoGreen from "./LogoGreen"
 
 
@@ -37,13 +38,13 @@ function Footer() {
 
         <ul className="footer__box-2">
           <li className="footer__copyright">
-            © 2023 ion ev . All rights reserved.
+            © {new Date().getFullYear()} Made by <Link className="footer__external-link" to="https://twitter.com/OloladeBello_">Ololade</Link> & <Link className="footer__external-link" to="https://twitter.com/LehtherHead">Olayinka</Link>
           </li>
-          <li className="footer__icons">
+          {/* <li className="footer__icons">
             <span className="footer__icon-box"><img className="footer__icon" src="/twitter-icon.svg" alt="twitter icon" /></span>
             <span className="footer__icon-box"><img className="footer__icon" src="/facebook-icon.svg" alt="facebook icon" /></span>
             <span className="footer__icon-box"><img className="footer__icon" src="/linkedin-icon.svg" alt="linkedin icon" /></span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </footer>

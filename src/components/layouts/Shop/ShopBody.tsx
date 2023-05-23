@@ -2,6 +2,7 @@ import Accessories from "../../component/Accessories"
 import Adapters from "../../component/Adapters"
 import Charging from "../../component/Charging"
 import Commercial from "../../component/Commercial"
+import OnlineSpecialist from "../../component/OnlineSpecialist"
 import Residential from "../../component/Residential"
 
 
@@ -13,6 +14,7 @@ function ShopBody() {
       <Adapters />
       <Charging />
       <Accessories />
+      <OnlineSpecialist />
     </div>
   )
 }
