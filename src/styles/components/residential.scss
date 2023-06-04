@@ -61,6 +61,7 @@
   background: #f3f1ee;
   border-radius: 8px;
   overflow: hidden;
+  transition: background-color 0.5s ease;
   @include media("<=41.25em") {
     // 660px
     height: 62rem;
@@ -68,6 +69,12 @@
   @include media("<=21.25em") {
     // 340px
     height: 45rem;
+  }
+}
+
+.residential__card:hover {
+  @include media(">phone") {
+    background-color: #e0dedb;
   }
 }
 
