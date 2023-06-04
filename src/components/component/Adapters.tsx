@@ -1,6 +1,8 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
 import { ProductDetails } from "../../types";
+import { useRef, useEffect } from "react";
+import useAppStore from "../../store";
 
 function Adapters() {
 
@@ -41,14 +43,24 @@ function Adapters() {
 
   ]
 
+  const adapterRef = useRef<HTMLElement>(null)
+
+  const setAdapterRef = useAppStore(s => s.setAdapterRef)
+
+  useEffect(() => {
+    setAdapterRef(adapterRef)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+
 
   return (
-    <section className="residential">
+    <section ref={adapterRef} className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
           tag="Adapters" text="Charge on the go." iconSrc="/adaptericon.svg" />
-        {adapterDetail.map(txt => (
-          <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
+        {adapterDetail.map((txt, index) => (
+          <ShopChargersCard key={index} names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
       </ul>
     </section>

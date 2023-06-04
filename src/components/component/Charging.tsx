@@ -1,6 +1,8 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
 import { ProductDetails } from "../../types";
+import { useRef, useEffect } from "react";
+import useAppStore from "../../store";
 
 function Charging() {
 
@@ -41,14 +43,24 @@ function Charging() {
 
   ]
 
+  const evcRef = useRef<HTMLElement>(null)
+
+  const setEVCRef = useAppStore(s => s.setEVCRef)
+
+  useEffect(() => {
+    setEVCRef(evcRef)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+
 
   return (
-    <section className="residential">
+    <section ref={evcRef} className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
           tag="EV Charging Cables" text="Long lasting ev cables." iconSrc="/connected.svg" />
-        {chargingDetail.map(txt => (
-          <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
+        {chargingDetail.map((txt, index) => (
+          <ShopChargersCard key={index} names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
       </ul>
     </section>

@@ -1,6 +1,8 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
 import { ProductDetails } from "../../types";
+import { useRef, useEffect } from "react";
+import useAppStore from "../../store";
 
 
 function Commercial() {
@@ -42,14 +44,23 @@ function Commercial() {
 
   ]
 
+  const commercialRef = useRef<HTMLElement>(null)
+
+  const setCommercialRef = useAppStore(s => s.setCommercialRef)
+
+  useEffect(() => {
+    setCommercialRef(commercialRef)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
 
   return (
-    <section className="residential">
+    <section ref={commercialRef} className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
           tag="Commercial" text="Charging as a service." iconSrc="/buliding.svg" />
-        {commercialDetail.map(txt => (
-          <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
+        {commercialDetail.map((txt, index) => (
+          <ShopChargersCard key={index} names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
       </ul>
     </section>

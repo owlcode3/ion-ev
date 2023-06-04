@@ -21,6 +21,7 @@
   padding: 1rem 1.2rem;
   border: 0.5px solid #525257;
   border-radius: 100px;
+  cursor: pointer;
   @include media("<=18.125em") {
     // 290px
     font-size: 1.3rem;

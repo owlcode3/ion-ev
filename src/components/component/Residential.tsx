@@ -1,6 +1,8 @@
 import ShopChargersCard from "./ShopChargersCard";
 import ShopChargerCardTag from "./ShopChargerCardTag";
 import { ProductDetails } from "../../types";
+import { useEffect, useRef } from "react";
+import useAppStore from "../../store";
 
 function Residential() {
 
@@ -41,14 +43,22 @@ function Residential() {
 
   ]
 
+  const residentialRef = useRef<HTMLElement>(null)
+
+  const setResidentialRef = useAppStore(s => s.setResidentialRef)
+
+  useEffect(() => {
+    setResidentialRef(residentialRef)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
-    <section className="residential">
+    <section ref={residentialRef} className="residential">
       <ul className="residential__box">
         <ShopChargerCardTag
           tag="Residential" text="Charge from the comfort of your house." iconSrc="/safe-home.svg" />
-        {residentialDetail.map(txt => (
-          <ShopChargersCard names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
+        {residentialDetail.map((txt, index) => (
+          <ShopChargersCard key={index} names={txt.names} price={txt.price} img={txt.Img} altName={txt.altName} />
         ))}
       </ul>
     </section>
