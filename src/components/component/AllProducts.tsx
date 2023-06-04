@@ -29,9 +29,6 @@ function AllProducts() {
       <li className="all-products__list" onClick={() => adapters?.current?.scrollIntoView({ behavior: "smooth" })}>
         Adapters <span className="all-products__no">(8)</span>
       </li>
-      <li className="all-products__list">
-        Charger Installation
-      </li>
     </ul>
   )
 }
