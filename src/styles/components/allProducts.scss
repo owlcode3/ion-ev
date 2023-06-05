@@ -1,8 +1,22 @@
 .all-products__lists {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  background: #f3f1ee;
+  border-bottom: 0.1px solid rgb(0, 0, 0, 0.4);
+  padding: 5rem;
+  z-index: 7777;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 3rem 2rem;
+  }
+  @include media("<=18.125em") {
+    // 290px
+    padding: 1.5rem;
+  }
 }
 
 .all-products__list:nth-child(1) {
