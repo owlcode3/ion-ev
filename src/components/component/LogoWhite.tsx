@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 
 function LogoWhite() {
   return (
-    <div className="logo-white">
+    <Link to="/" className="logo-white">
       <span className="logo-white__icon-box"><img src="/Logo.svg" alt="logo" /></span> <span className="logo-white__text-box">ion ev</span>
-    </div>)
+    </Link>)
 }
 
 export default LogoWhite
