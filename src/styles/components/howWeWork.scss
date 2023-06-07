@@ -118,7 +118,4 @@
   background: $color-white-f;
   border: 1px solid #5caaaa;
   border-radius: $border;
-  @include media("<=40.625em") {
-    width: 23rem;
-  }
 }
