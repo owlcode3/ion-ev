@@ -111,19 +111,24 @@
   @extend %center;
   justify-content: space-around;
   gap: 1rem;
-  width: 27rem;
+  width: 29rem;
   height: 6rem;
   font-size: 1.7rem;
+  text-transform: uppercase;
   padding: 2rem 4rem;
   margin-top: 2.5rem;
   color: #0e5543;
   background: $color-white-b;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: $border;
+  @include media("<=48.0625em") {
+    // 769px
+    width: 30rem;
+  }
   @include media("<=28.4375em") {
     // 455px
-    font-size: 1.5rem;
-    width: 22rem;
+    font-size: 1.4rem;
+    width: 24rem;
     padding: 1rem 3rem;
   }
 }
