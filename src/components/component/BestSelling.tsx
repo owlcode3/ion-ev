@@ -12,34 +12,34 @@ function BestSelling() {
     {
       name: "Enel X JuiceBox 40",
       price: "$401",
-      Img: "/bs-card-1.svg",
+      Img: "/r-image-3.svg",
       altName: "product card"
     },
     {
       name: "Grizzl-E Classic NEMA ",
       price: "$200",
-      Img: "/bs-card-2.svg",
+      Img: "/r-image-4.svg",
       altName: "product card"
     },
 
     {
       name: "Tesla Wall Connector (3)",
       price: "$450",
-      Img: "/bs-card-3.svg",
+      Img: "/r-image-5.svg",
       altName: "product card"
     },
 
     {
       name: "Chargiepoint Home Flex",
       price: "$393",
-      Img: "/bs-card-4.svg",
+      Img: "/char-image-1.svg",
       altName: "product card"
     },
 
     {
       name: "Grizzl-E Classic NEMA ",
       price: "$200",
-      Img: "/bs-card-5.svg",
+      Img: "/char-image-2.svg",
       altName: "product card"
     }
   ]
@@ -75,7 +75,7 @@ function BestSelling() {
     <section className="bs">
       <div className="bs__box-1">
         <h2 className="bs__heading">Best selling chargers</h2>
-        <p className="bs__paragraph">Don`t have a charger yet?</p>
+        <p className="bs__paragraph">Don't have a charger yet?</p>
       </div>
 
       <ul ref={scrollRightRef} onScroll={scrolled} className="bs__box-2">

@@ -10,7 +10,7 @@
 .bs__box-1 {
   @extend %center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 91%;
   @include media("<=phone") {
     align-items: center;
@@ -19,7 +19,7 @@
 
 .bs__heading {
   font-weight: 500;
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   color: $color-txt-7;
   @include media("<=phone") {
     font-size: 4.7rem;
@@ -73,9 +73,19 @@
   @extend %center;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f3f1ee;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
   @include media("<=23.125em") {
     // 370px
     width: 100%;
+  }
+}
+
+.bs__card:hover {
+  @include media(">phone") {
+    background-color: #e0dedb;
   }
 }
 
@@ -85,7 +95,7 @@
   overflow: hidden;
   width: 36rem;
   height: 38rem;
-  background-image: url(/bs-card-bg.svg);
+  // background-image: url(/bs-card-bg.svg);
   border-radius: 8px;
   @include media("<=23.125em") {
     // 370px
@@ -94,7 +104,7 @@
 }
 
 .bs__img {
-  margin-bottom: -0.8rem;
+  // margin-bottom: -0.8rem;
   width: 88%;
   height: 88%;
 }
@@ -136,9 +146,10 @@
   @extend %center;
   justify-content: space-around;
   gap: 1rem;
-  width: 20rem;
+  width: 23rem;
   height: 5.5rem;
   font-size: 1.7rem;
+  text-transform: uppercase;
   padding: 2rem 4rem;
   margin-top: 2.5rem;
   color: #5caaaa;
