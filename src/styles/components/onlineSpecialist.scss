@@ -55,14 +55,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-left: 3rem;
+  align-items: flex-start;
+  padding-left: 6rem;
   gap: 0.5rem;
   width: 55%;
+  text-align: left;
   @include media("<=56.25em") {
     // 900px
     width: 100%;
     padding: 0;
+    align-items: center;
+    text-align: center;
   }
   @include media("<=25.9375em") {
     // 415px
@@ -80,7 +83,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-align: center;
   @include media("<=tablet") {
     font-size: 4rem;
   }
@@ -101,7 +103,6 @@
   font-size: 1.7rem;
   line-height: 3.2rem;
   color: $color-white;
-  text-align: center;
   @include media("<=tablet") {
     font-size: 2rem;
   }
