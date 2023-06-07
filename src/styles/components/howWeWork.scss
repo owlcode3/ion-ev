@@ -51,6 +51,10 @@
   list-style: none;
   width: 100%;
   padding: 0 5rem;
+  @include media("<=60em") {
+    //960px
+    padding: 0 3rem;
+  }
   @include media("<=53.125em") {
     //850px
     gap: 3.5rem;
@@ -89,9 +93,9 @@
 }
 
 .hww__card-paragraph {
-  max-width: 22rem;
+  max-width: 25rem;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 140%;
   color: $color-txt-6;
   @include media("<=53.125em") {
