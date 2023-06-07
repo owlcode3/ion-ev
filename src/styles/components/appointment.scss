@@ -91,10 +91,14 @@
   background: $color-white-f;
   border-radius: $border;
   border: 1px solid #ffffff1a;
+  @include media("<=48em") {
+    // 768px
+    width: 29rem;
+  }
   @include media("<=34.375em") {
     // 550px
     font-size: 1.5rem;
-    width: 23rem;
+    width: 24rem;
     padding: 2rem;
   }
 }
