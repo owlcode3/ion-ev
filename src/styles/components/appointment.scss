@@ -81,10 +81,11 @@
   @extend %center;
   justify-content: space-around;
   gap: 1rem;
-  width: 26.5rem;
+  width: 28rem;
   height: 5.7rem;
   font-size: 1.7rem;
-  padding: 2rem 4rem;
+  text-transform: uppercase;
+  padding: 2rem 3.5rem;
   margin-top: 2.5rem;
   color: #0e5543;
   background: $color-white-f;
