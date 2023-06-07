@@ -36,13 +36,6 @@ function Accessories() {
       altName: "product card"
     },
 
-    {
-      names: ["Juice Home charging", "??????"],
-      price: "$600",
-      Img: "eac-image-5.svg",
-      altName: "product card"
-    },
-
   ]
 
   const evaRef = useRef<HTMLElement>(null)

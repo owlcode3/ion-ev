@@ -34,14 +34,6 @@ function Commercial() {
       Img: "/c-image-4.svg",
       altName: "product card"
     },
-
-    {
-      names: ["Juice Home charging", "??????????"],
-      price: "$600",
-      Img: "/c-image-5.svg",
-      altName: "product card"
-    },
-
   ]
 
   const commercialRef = useRef<HTMLElement>(null)

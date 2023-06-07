@@ -34,13 +34,6 @@ function Charging() {
       altName: "product card"
     },
 
-    {
-      names: ["Juice Home charging", "????????"],
-      price: "$600",
-      Img: "/char-image-5.svg",
-      altName: "product card"
-    },
-
   ]
 
   const evcRef = useRef<HTMLElement>(null)
