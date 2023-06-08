@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom"
+import useAppStore from "../../store"
 
 type Props = {
-  menuState: boolean,
   mobileNavParentCn: string,
   mobileNavLinkCn: string,
 
 }
 
-function MobileNav({ menuState, mobileNavParentCn, mobileNavLinkCn }: Props) {
+function MobileNav({ mobileNavParentCn, mobileNavLinkCn }: Props) {
 
+  const menuState = useAppStore(s => s.productsRef.menu)
 
   return (
     <div className={"home-header__mobile-nav" + " " + `${mobileNavParentCn}`} style={{

@@ -36,7 +36,7 @@
     // 650px
     display: block;
     position: absolute;
-    right: 1.5rem;
+    right: 2rem;
     width: 3rem;
     height: 2.6rem;
     cursor: pointer;
@@ -69,6 +69,10 @@
 
 .header__hamburger-line-for-shop {
   background-color: $color-txt-7;
+}
+
+.header__checkbox:checked {
+  right: 3rem;
 }
 
 .header__checkbox:checked ~ .header__hamburger .header__hamburger-line:nth-child(1) {

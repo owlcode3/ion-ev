@@ -1,4 +1,4 @@
-import ShopBody from "../layouts/Shop/ShopBody"
+import { Outlet } from "react-router-dom"
 import ShopFooter from "../layouts/Shop/ShopFooter"
 import ShopHeader from "../layouts/Shop/ShopHeader"
 
@@ -7,7 +7,7 @@ function Shop() {
   return (
     <>
       <ShopHeader />
-      <ShopBody />
+      <Outlet />
       <ShopFooter />
     </>
   )

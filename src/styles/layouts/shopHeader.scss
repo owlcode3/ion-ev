@@ -4,9 +4,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 3rem 5rem;
-  padding-bottom: 6rem;
-  // height: 54rem;
-  height: 40rem;
+  // padding-bottom: 6rem;
+  // height: 40rem;
+  height: 17rem;
   background: #f3f1ee;
   @include media("<=43.75em") {
     // 700px
@@ -16,7 +16,7 @@
   @include media("<=18.125em") {
     // 290px
     padding: 1.5rem;
-    height: 35rem;
+    // height: 35rem;
   }
 }
 

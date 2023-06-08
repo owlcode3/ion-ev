@@ -1,12 +1,14 @@
-import { Dispatch } from "react"
+import useAppStore from "../../store"
 
 type Props = {
-  setMenuState: Dispatch<React.SetStateAction<boolean>>,
-  menuState: boolean,
   spanCn?: string
 }
 
-function HamburgerIcon({ setMenuState, menuState, spanCn }: Props) {
+function HamburgerIcon({ spanCn }: Props) {
+
+  const menuState = useAppStore(s => s.productsRef.menu)
+  const setMenuState = useAppStore(s => s.setMenu)
+
   return (
     <>
       <input type="checkbox" onClick={() => setMenuState(!menuState)} className="header__checkbox" id="checkbox" />

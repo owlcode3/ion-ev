@@ -1,4 +1,3 @@
-import { Dispatch } from "react";
 import NavLinks from "./NavLinks";
 import LogoWhite from "./LogoWhite";
 import LogoGreen from "./LogoGreen";
@@ -6,8 +5,6 @@ import Cart from "./Cart";
 import HamburgerIcon from "./HamburgerIcon";
 
 type Props = {
-  setMenuState: Dispatch<React.SetStateAction<boolean>>,
-  menuState: boolean,
   linkParentCn: string,
   linkChildCn: string,
   WhatLogo: boolean,
@@ -16,7 +13,7 @@ type Props = {
   hamburgerCn: string,
 }
 
-function Header({ setMenuState, menuState, linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, hamburgerCn }: Props) {
+function Header({ linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, hamburgerCn }: Props) {
 
   return (
     <header className={"header"}>
@@ -26,7 +23,7 @@ function Header({ setMenuState, menuState, linkParentCn, linkChildCn, WhatLogo, 
 
       {<Cart cartParentCn={cartParentCn} cartIcon={cartIcon} />}
 
-      {<HamburgerIcon setMenuState={setMenuState} menuState={menuState} spanCn={hamburgerCn} />}
+      {<HamburgerIcon spanCn={hamburgerCn} />}
     </header>
   )
 }
