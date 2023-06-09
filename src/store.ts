@@ -7,7 +7,8 @@ type ProductsType = {
    adaptersRef?: RefObject<HTMLElement>;
    evChargingRef?: RefObject<HTMLElement>;
    evAccessoriesRef?: RefObject<HTMLElement>;
-   menu?: boolean;
+   shopMenu?: boolean;
+   homeMenu?: boolean;
 };
 
 type StoreType = {
@@ -17,12 +18,14 @@ type StoreType = {
    setAdapterRef: (ref: RefObject<HTMLElement>) => void;
    setEVCRef: (ref: RefObject<HTMLElement>) => void;
    setEVARef: (ref: RefObject<HTMLElement>) => void;
-   setMenu: (menu: boolean) => void;
+   setShopMenu: (menu: boolean) => void;
+   setHomeMenu: (menu: boolean) => void;
 };
 
 const useAppStore = create<StoreType>(set => ({
    productsRef: {
-      menu: false
+      shopMenu: false,
+      homeMenu: false
    },
    setResidentialRef: residentialRef =>
       set(store => ({ productsRef: { ...store.productsRef, residentialRef } })),
@@ -34,7 +37,8 @@ const useAppStore = create<StoreType>(set => ({
       set(store => ({ productsRef: { ...store.productsRef, evChargingRef } })),
    setEVARef: evAccessoriesRef =>
       set(store => ({ productsRef: { ...store.productsRef, evAccessoriesRef } })),
-   setMenu: menu => set(store => ({ productsRef: { ...store.productsRef, menu } }))
+   setShopMenu: shopMenu => set(store => ({ productsRef: { ...store.productsRef, shopMenu } })),
+   setHomeMenu: homeMenu => set(store => ({ productsRef: { ...store.productsRef, homeMenu } }))
 }));
 
 export default useAppStore;

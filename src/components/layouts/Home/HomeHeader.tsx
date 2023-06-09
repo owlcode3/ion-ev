@@ -1,29 +1,43 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "../../component/Header"
 import HeroHome from "../../component/HeroHome"
-import MobileNav from "../../component/MobileNav"
+import useAppStore from "../../../store";
+import MobileNavHome from "../../component/MobileNavHome";
+import { useLocation } from "react-router-dom";
 
 
 function HomeHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation()
+  const menuState = useAppStore(s => s.productsRef.homeMenu)
+  const setMenuState = useAppStore(s => s.setHomeMenu)
 
   useEffect(() => {
-    if (isMenuOpen) {
+    setMenuState(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname])
+
+
+  useEffect(() => {
+    const scrollBarWidth = window.innerWidth - document.body.clientWidth
+
+    if (menuState) {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       document.getElementById("root")!.style.overflowY = "hidden"
       document.body.style.overflowY = "hidden"
+      document.body.style.marginRight = `${scrollBarWidth}px`;
     } else {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       document.getElementById("root")!.style.overflowY = ""
       document.body.style.overflowY = ""
+      document.body.style.marginRight = "";
     }
-  }, [isMenuOpen])
+  }, [menuState])
 
   return (
     <div className="home-header">
-      <Header setMenuState={setIsMenuOpen} menuState={isMenuOpen} linkParentCn="header__nav" linkChildCn="header__link" WhatLogo={true} cartParentCn={""} cartIcon={"/Search.svg"} hamburgerCn="" />
+      <Header linkParentCn="header__nav" linkChildCn="header__link" WhatLogo={true} cartParentCn={""} cartIcon={"/Search.svg"} hamburgerCn="" />
       <HeroHome />
-      <MobileNav menuState={isMenuOpen} mobileNavParentCn="" mobileNavLinkCn="home-header__nav" />
+      <MobileNavHome mobileNavParentCn="" mobileNavLinkCn="home-header__nav" />
     </div>
   )
 }

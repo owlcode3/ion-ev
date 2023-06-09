@@ -4,10 +4,10 @@ type Props = {
   spanCn?: string
 }
 
-function HamburgerIcon({ spanCn }: Props) {
+function HamburgerIconHome({ spanCn }: Props) {
 
-  const menuState = useAppStore(s => s.productsRef.menu)
-  const setMenuState = useAppStore(s => s.setMenu)
+  const menuState = useAppStore(s => s.productsRef.homeMenu)
+  const setMenuState = useAppStore(s => s.setHomeMenu)
 
   return (
     <>
@@ -20,4 +20,4 @@ function HamburgerIcon({ spanCn }: Props) {
   )
 }
 
-export default HamburgerIcon
+export default HamburgerIconHome

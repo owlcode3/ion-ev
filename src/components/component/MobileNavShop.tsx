@@ -7,9 +7,9 @@ type Props = {
 
 }
 
-function MobileNav({ mobileNavParentCn, mobileNavLinkCn }: Props) {
+function MobileNavShop({ mobileNavParentCn, mobileNavLinkCn }: Props) {
 
-  const menuState = useAppStore(s => s.productsRef.menu)
+  const menuState = useAppStore(s => s.productsRef.shopMenu)
 
   return (
     <div className={"home-header__mobile-nav" + " " + `${mobileNavParentCn}`} style={{
@@ -22,4 +22,4 @@ function MobileNav({ mobileNavParentCn, mobileNavLinkCn }: Props) {
     </div>)
 }
 
-export default MobileNav
+export default MobileNavShop

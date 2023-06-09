@@ -2,7 +2,8 @@ import NavLinks from "./NavLinks";
 import LogoWhite from "./LogoWhite";
 import LogoGreen from "./LogoGreen";
 import Cart from "./Cart";
-import HamburgerIcon from "./HamburgerIcon";
+import HamburgerIconShop from "./HamburgerIconShop";
+import HamburgerIconHome from "./HamburgerIconHome";
 
 type Props = {
   linkParentCn: string,
@@ -23,7 +24,7 @@ function Header({ linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, h
 
       {<Cart cartParentCn={cartParentCn} cartIcon={cartIcon} />}
 
-      {<HamburgerIcon spanCn={hamburgerCn} />}
+      {hamburgerCn ? <HamburgerIconShop spanCn={hamburgerCn} /> : <HamburgerIconHome />}
     </header>
   )
 }

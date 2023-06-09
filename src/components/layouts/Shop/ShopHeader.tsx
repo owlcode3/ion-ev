@@ -1,15 +1,26 @@
 import { useEffect } from "react";
 import Header from "../../component/Header";
-import MobileNav from "../../component/MobileNav";
 import useAppStore from "../../../store";
+import MobileNavShop from "../../component/MobileNavShop";
+import { useLocation } from "react-router-dom";
 
 
 function ShopHeader() {
 
-  const menuState = useAppStore(s => s.productsRef.menu)
+  const location = useLocation()
+  const menuState = useAppStore(s => s.productsRef.shopMenu)
+  const setMenuState = useAppStore(s => s.setShopMenu)
+
 
   useEffect(() => {
+    setMenuState(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname])
 
+  console.log(location);
+
+
+  useEffect(() => {
     const scrollBarWidth = window.innerWidth - document.body.clientWidth
 
     if (menuState) {
@@ -26,9 +37,9 @@ function ShopHeader() {
   }, [menuState])
 
   return (
-    <div className="shop-header">
+    <div className="shop-header" style={{ background: location.pathname == "/shop" || location.pathname == "/shop/" ? "#f3f1ee" : "#FFFFFF" }}>
       <Header linkParentCn="header__nav-for-shop" linkChildCn="header__link-for-shop" WhatLogo={false} cartParentCn="cart-for-shop" cartIcon="/search-icon-black.svg" hamburgerCn="header__hamburger-line-for-shop" />
-      <MobileNav mobileNavParentCn="shop-header__mobile-nav" mobileNavLinkCn="shop-header__nav" />
+      <MobileNavShop mobileNavParentCn="shop-header__mobile-nav" mobileNavLinkCn="shop-header__nav" />
     </div>
   )
 }
