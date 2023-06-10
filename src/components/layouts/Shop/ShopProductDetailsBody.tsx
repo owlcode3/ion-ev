@@ -1,7 +1,10 @@
+import ProductDetailsImage from "../../component/ProductDetailsImage"
 
 function ShopProductDetailsBody() {
   return (
-    <div>ShopProductDetailsBody</div>
+    <div className="spd-body">
+      <ProductDetailsImage />
+    </div>
   )
 }
 
