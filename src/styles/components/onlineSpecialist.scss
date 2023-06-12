@@ -2,14 +2,13 @@
   @extend %center;
   width: 100%;
   height: 56rem;
-  background: $color-white;
+  background: #f3f1ee;
   font-style: normal;
-  margin-top: 0.5rem;
-  border-bottom: 0.1px solid rgb(107, 114, 128, 0.1);
+  padding-top: 0.5rem;
   @include media("<=56.25em") {
     // 900px
     height: 60rem;
-    margin-top: 0;
+    padding-top: 0;
   }
   @include media("<=phone") {
     height: 60rem;

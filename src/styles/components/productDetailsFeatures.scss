@@ -2,7 +2,7 @@
   padding: 0 6.5rem;
 }
 
-.pd-features__lists {
+.pd-features__lists-1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -11,14 +11,21 @@
   background: $color-white;
   color: #525257;
   padding: 3.5rem 0;
+  margin-bottom: 3.5rem;
   border-bottom: 1px solid #f3f1ee;
+}
+
+.pd-features__box-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8rem;
 }
 
 .active-fl {
   background: #f3f1ee;
 }
 
-.pd-features__list {
+.pd-features__list-1 {
   @extend %center;
   gap: 0.5rem;
   font-style: normal;
@@ -29,8 +36,83 @@
   border-radius: 100px;
   cursor: pointer;
   @include media("<=18.125em") {
-    // 290px
-    font-size: 1.3rem;
-    padding: 0.8rem;
+    // // 290px
+    // font-size: 1.3rem;
+    // padding: 0.8rem;
   }
+}
+
+.pd-features__lists-2 {
+  list-style-type: disc;
+  list-style-position: outside !important;
+  padding-left: 2rem;
+}
+
+.pd-features__list-2,
+.pd-features__support-list,
+.pd-features__resources-list {
+  max-width: 43rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-left: 1.2rem;
+}
+
+.pd-features__list-2:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+.pd-features__box-2 {
+  display: flex;
+}
+
+.pd-features__installation-box,
+.pd-features__support-box {
+  margin-bottom: 1rem;
+}
+
+.pd-features__installation,
+.pd-features__support,
+.pd-features__resources {
+  display: block;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-bottom: 1rem;
+}
+
+.pd-features__texts {
+  max-width: 46rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  color: #525257;
+}
+
+.pd-features__support-lists,
+.pd-features__resources-lists {
+  list-style-type: disc;
+  list-style-position: outside !important;
+  padding-left: 2rem;
+}
+
+.pd-features__support-list,
+.pd-features__resources-list {
+  font-size: 1.4rem;
+  max-width: 43rem;
+  margin-left: 0.8rem;
+}
+
+.pd-features__link-1 {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+
+.pd-features__link-2 {
+  color: #5caaaa;
 }
