@@ -8,7 +8,6 @@ function AllProducts() {
   const adapters = useAppStore(s => s.productsRef.adaptersRef);
   const evc = useAppStore(s => s.productsRef.evChargingRef);
   const eva = useAppStore(s => s.productsRef.evAccessoriesRef);
-  const menuState = useAppStore(s => s.productsRef.menu)
 
   const [productsClicks, setProductsClick] = useState({
     all: true,
@@ -23,7 +22,7 @@ function AllProducts() {
   return (
     <div className="all-products">
 
-      <ul className="all-products__lists" style={{ marginRight: menuState ? "5rem" : undefined }}>
+      <ul className="all-products__lists">
         <li className={`all-products__list ${productsClicks.all ? "active-product" : ""}`}
           onClick={() => {
             residentialRef?.current?.scrollIntoView({ behavior: "smooth" })

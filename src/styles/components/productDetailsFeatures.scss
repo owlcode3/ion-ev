@@ -1,0 +1,36 @@
+.pd-features {
+  padding: 0 6.5rem;
+}
+
+.pd-features__lists {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+  background: $color-white;
+  color: #525257;
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #f3f1ee;
+}
+
+.active-fl {
+  background: #f3f1ee;
+}
+
+.pd-features__list {
+  @extend %center;
+  gap: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 120%;
+  padding: 1.2rem 1.6rem;
+  border-radius: 100px;
+  cursor: pointer;
+  @include media("<=18.125em") {
+    // 290px
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
