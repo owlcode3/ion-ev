@@ -1,0 +1,71 @@
+.pd-av {
+  padding: 6rem 5rem;
+  background-color: $color-white;
+}
+
+.pd-av__heading {
+  font-weight: 500;
+  font-size: 3.7rem;
+  color: $color-txt-7;
+  margin-bottom: 3rem;
+  @include media("<=phone") {
+    font-size: 4.7rem;
+    text-align: center;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.pd-av__lists {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+  // gap: 2.5rem;
+  width: 100%;
+  // padding: 0 2rem;
+  @include media("<=68.75em") {
+    // 1100px
+    grid-template-columns: 32% 32% 32%;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  @include media("<=59.375em") {
+    // 950px
+    grid-template-columns: 45% 45%;
+    gap: 2.5rem;
+    padding: 0 1rem;
+  }
+  @include media("<=43.775em") {
+    // 700px
+    grid-template-columns: 48% 48%;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  @include media("<=41.25em") {
+    // 660px
+    grid-template-columns: 98%;
+  }
+  @include media("<=21.25em") {
+    // 340px
+    grid-template-columns: 99%;
+    padding: 0 1rem;
+  }
+}
+
+.pd-av__btn {
+  @extend %center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 20rem;
+  height: 5.2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-top: 2.5rem;
+  color: #5caaaa;
+  background: $color-white-f;
+  border: 1px solid #5caaaa;
+  border-radius: $border;
+  margin: 6.5rem auto 0;
+}

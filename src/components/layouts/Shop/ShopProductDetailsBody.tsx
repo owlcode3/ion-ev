@@ -1,4 +1,5 @@
 import OnlineSpecialist from "../../component/OnlineSpecialist"
+import ProductDetailsAlsoView from "../../component/ProductDetailsAlsoView"
 import ProductDetailsFeatures from "../../component/ProductDetailsFeatures"
 import ProductDetailsImage from "../../component/ProductDetailsImage"
 
@@ -7,6 +8,7 @@ function ShopProductDetailsBody() {
     <div className="spd-body">
       <ProductDetailsImage />
       <ProductDetailsFeatures />
+      <ProductDetailsAlsoView />
       <OnlineSpecialist />
     </div>
   )
