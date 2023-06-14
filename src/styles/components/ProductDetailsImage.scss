@@ -4,6 +4,19 @@
   padding: 0 6.5rem;
   padding-right: 5rem;
   margin-bottom: 12rem;
+  @include media("<=61.875em") {
+    // 990px
+    flex-direction: column;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+    margin-bottom: 8rem;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    padding: 0;
+  }
 }
 
 .pd-image__box-1 {
@@ -12,6 +25,15 @@
   height: 72.2rem;
   background: #f3f1ee;
   border-radius: 8px;
+  @include media("<=61.875em") {
+    // 990px
+    width: 100%;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    border-radius: 0;
+    height: 54rem;
+  }
 }
 
 .pd-image__img {
@@ -27,6 +49,10 @@
   padding: 0 3rem;
   @extend %center;
   justify-content: space-between;
+  @include media("<=34.375em") {
+    // 550px
+    padding: 0 1rem;
+  }
 }
 
 .pd-image__arrow-1,
@@ -59,6 +85,14 @@
 
 .pd-image__box-2 {
   font-style: normal;
+  @include media("<=34.375em") {
+    // 550px
+    padding: 0 3rem;
+  }
+  @include media("<=18.125em") {
+    // 290px
+    padding: 0 1rem;
+  }
 }
 
 .pd-image__name-box {
@@ -73,6 +107,23 @@
   line-height: 56px;
   color: #525257;
   margin-bottom: 2rem;
+  @include media("<=61.875em") {
+    // 990px
+    max-width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 0;
+  }
+  @include media("<=52.625em") {
+    // 842px
+    margin-bottom: 2rem;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    font-size: 3rem;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
 }
 
 .pd-image__price {
@@ -83,6 +134,32 @@
   letter-spacing: 0.25px;
   color: #5caaaa;
   margin-bottom: 2rem;
+  @include media("<=61.875em") {
+    // 990px
+    display: none;
+  }
+  @include media("<=52.625em") {
+    // 842px
+    display: block;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+.pd-image__price--shown {
+  display: none;
+  @include media("<=61.875em") {
+    // 990px
+    display: inline-flex;
+    margin-left: auto;
+  }
+  @include media("<=52.625em") {
+    // 842px
+    display: none;
+  }
 }
 
 .pd-image__quantity-box {
@@ -125,7 +202,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 128px;
   width: 43rem;
   height: 7.2rem;
   background: #086b6b;
@@ -136,6 +212,14 @@
   letter-spacing: 0.25px;
   color: $color-white;
   text-transform: uppercase;
+  @include media("<=61.875em") {
+    // 990px
+    width: 100%;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    padding: 0;
+  }
 }
 
 .pd-image__description-box {

@@ -22,7 +22,9 @@ function ProductDetailsImage() {
 
       <div className="pd-image__box-2">
         <div className="pd-image__name-box">
-          <h1 className="pd-image__name">Tesla Wall Connector (3rd Gen)</h1>
+          <h1 className="pd-image__name">
+            Tesla Wall Connector (3rd Gen) <span className="pd-image__price pd-image__price--shown">$450</span>
+          </h1>
           <span className="pd-image__price">$450</span>
           <div className="pd-image__quantity-box">
             <span className="pd-image__quantity">Quantity:</span>
