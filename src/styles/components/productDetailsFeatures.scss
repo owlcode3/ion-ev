@@ -1,5 +1,17 @@
 .pd-features {
   padding: 0 6.5rem 4.5rem;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    padding: 0 3rem;
+  }
+  @include media("<=18.125em") {
+    // 290px
+    padding: 0 1rem;
+  }
 }
 
 .pd-features__lists-1 {
@@ -13,6 +25,10 @@
   padding: 3.5rem 0;
   margin-bottom: 3.5rem;
   border-bottom: 1px solid #f3f1ee;
+  @include media("<=34.375em") {
+    // 550px
+    padding: 2.5rem 0;
+  }
 }
 
 .pd-features__box-2 {
@@ -20,6 +36,10 @@
   justify-content: space-between;
   padding-right: 8rem;
   gap: 4rem;
+  @include media("<=61.25em") {
+    flex-direction: column;
+    padding-right: 0;
+  }
 }
 
 .active-fl {
