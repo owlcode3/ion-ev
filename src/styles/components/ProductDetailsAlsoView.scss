@@ -1,18 +1,31 @@
 .pd-av {
   padding: 6rem 5rem;
   background-color: $color-white;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 8rem 3rem;
+  }
+  @include media("<=34.375em") {
+    // 550px
+    padding: 8rem 3rem;
+  }
+  @include media("<=27.8125em") {
+    // 445px
+    padding: 8rem 1.5rem;
+  }
 }
 
 .pd-av__heading {
   font-weight: 500;
   font-size: 3.7rem;
   color: $color-txt-7;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   @include media("<=phone") {
-    font-size: 4.7rem;
-    text-align: center;
-    line-height: 5rem;
-    margin-bottom: 2rem;
+    font-size: 3.5rem;
+  }
+  @include media("<=22.3125em") {
+    // 357px
+    font-size: 2.5rem;
   }
 }
 
@@ -32,9 +45,11 @@
   }
   @include media("<=59.375em") {
     // 950px
-    grid-template-columns: 45% 45%;
-    gap: 2.5rem;
-    padding: 0 1rem;
+    // grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
+    gap: 2rem;
+    padding: 0;
+    // background-color: rebeccapurple;
   }
   @include media("<=43.775em") {
     // 700px
@@ -44,7 +59,7 @@
   }
   @include media("<=41.25em") {
     // 660px
-    grid-template-columns: 98%;
+    grid-template-columns: 100%;
   }
   @include media("<=21.25em") {
     // 340px

@@ -8,9 +8,9 @@
     // 550px
     padding: 0 3rem;
   }
-  @include media("<=18.125em") {
-    // 290px
-    padding: 0 1rem;
+  @include media("<=27.8125em") {
+    // 445px
+    padding: 0 1.5rem;
   }
 }
 
@@ -28,6 +28,11 @@
   @include media("<=34.375em") {
     // 550px
     padding: 2.5rem 0;
+  }
+  @include media("<=27.8125em") {
+    // 445px
+    // padding: 0 1.5rem;
+    gap: 1rem;
   }
 }
 
