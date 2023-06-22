@@ -1,9 +1,10 @@
 import NavLinks from "./NavLinks";
 import LogoWhite from "./LogoWhite";
 import LogoGreen from "./LogoGreen";
-import Cart from "./Cart";
+import CartIcon from "./CartIcon";
 import HamburgerIconShop from "./HamburgerIconShop";
 import HamburgerIconHome from "./HamburgerIconHome";
+import Cart from "./Cart";
 
 type Props = {
   linkParentCn: string,
@@ -17,15 +18,18 @@ type Props = {
 function Header({ linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, hamburgerCn }: Props) {
 
   return (
-    <header className={"header"}>
-      {WhatLogo ? <LogoWhite /> : <LogoGreen />}
+    <>
+      <header className={"header"}>
+        {WhatLogo ? <LogoWhite /> : <LogoGreen />}
 
-      <NavLinks parentCn={linkParentCn} childCn={linkChildCn} />
+        <NavLinks parentCn={linkParentCn} childCn={linkChildCn} />
 
-      {<Cart cartParentCn={cartParentCn} cartIcon={cartIcon} />}
+        {<CartIcon cartParentCn={cartParentCn} cartIcon={cartIcon} />}
 
-      {hamburgerCn ? <HamburgerIconShop spanCn={hamburgerCn} /> : <HamburgerIconHome />}
-    </header>
+        {hamburgerCn ? <HamburgerIconShop spanCn={hamburgerCn} /> : <HamburgerIconHome />}
+      </header>
+      <Cart />
+    </>
   )
 }
 

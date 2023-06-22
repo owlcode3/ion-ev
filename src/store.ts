@@ -9,6 +9,7 @@ type ProductsType = {
    evAccessoriesRef?: RefObject<HTMLElement>;
    shopMenu?: boolean;
    homeMenu?: boolean;
+   showHideCart?: boolean;
 };
 
 type StoreType = {
@@ -20,12 +21,14 @@ type StoreType = {
    setEVARef: (ref: RefObject<HTMLElement>) => void;
    setShopMenu: (menu: boolean) => void;
    setHomeMenu: (menu: boolean) => void;
+   setShowHideCart: (status: boolean) => void;
 };
 
 const useAppStore = create<StoreType>(set => ({
    productsRef: {
       shopMenu: false,
-      homeMenu: false
+      homeMenu: false,
+      showHideCart: false
    },
    setResidentialRef: residentialRef =>
       set(store => ({ productsRef: { ...store.productsRef, residentialRef } })),
@@ -38,7 +41,9 @@ const useAppStore = create<StoreType>(set => ({
    setEVARef: evAccessoriesRef =>
       set(store => ({ productsRef: { ...store.productsRef, evAccessoriesRef } })),
    setShopMenu: shopMenu => set(store => ({ productsRef: { ...store.productsRef, shopMenu } })),
-   setHomeMenu: homeMenu => set(store => ({ productsRef: { ...store.productsRef, homeMenu } }))
+   setHomeMenu: homeMenu => set(store => ({ productsRef: { ...store.productsRef, homeMenu } })),
+   setShowHideCart: showHideCart =>
+      set(store => ({ productsRef: { ...store.productsRef, showHideCart } }))
 }));
 
 export default useAppStore;

@@ -1,0 +1,70 @@
+.empty-cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $background;
+}
+
+.empty-cart__box-1 {
+  @extend %center;
+  justify-content: space-between;
+  padding: 2rem 3.5rem;
+  border-bottom: 1px solid #f3f1ee;
+}
+
+.empty-cart__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #525257;
+}
+
+.empty-cart__cancel-icon {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.empty-cart__box-2 {
+  @extend %center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem 3.5rem;
+}
+
+.empty-cart__bag-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: #525257;
+}
+
+.empty-cart__bag-icon {
+  margin-bottom: 2rem;
+}
+
+.empty-cart__box-3 {
+  @extend %center;
+  justify-content: space-between;
+  padding: 2rem 3.5rem;
+  border-top: 1px solid #f3f1ee;
+}
+
+.empty-cart__btn {
+  @extend %center;
+  justify-content: space-around;
+  width: 28rem;
+  height: 7rem;
+  padding: 3.5rem;
+  font-size: 1.9rem;
+  color: $color-white;
+  background: #5caaaa;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $border;
+}
+
+.empty-cart__btn--2 {
+  background: #f3f1ee;
+  color: #525257;
+}

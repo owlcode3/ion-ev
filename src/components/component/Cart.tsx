@@ -1,15 +1,15 @@
+import useAppStore from "../../store";
+import EmptyCart from "./EmptyCart"
 
-type Props = {
-  cartParentCn: string,
-  cartIcon: string
-}
+function Cart() {
 
-function CartIcon({ cartParentCn, cartIcon }: Props) {
+  const cartStatus = useAppStore(s => s.productsRef.showHideCart);
+
   return (
-    <div className={"cart" + " " + `${cartParentCn}`} >
-      <div className="cart__search-icon-box"><img src={cartIcon} alt="search icon" /></div>
-      <div className="cart__text-box"><span>Cart</span> <span className="cart__no">0</span></div>
-    </div>)
+    <div className="cart" style={{ right: cartStatus ? "0" : "-100%" }}>
+      <EmptyCart />
+    </div>
+  )
 }
 
-export default CartIcon
+export default Cart

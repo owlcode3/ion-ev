@@ -38,7 +38,7 @@ function ShopHeader() {
 
   return (
     <div className="shop-header" style={{ background: location.pathname == "/shop" || location.pathname == "/shop/" ? "#f3f1ee" : "#FFFFFF" }}>
-      <Header linkParentCn="header__nav-for-shop" linkChildCn="header__link-for-shop" WhatLogo={false} cartParentCn="cart-for-shop" cartIcon="/search-icon-black.svg" hamburgerCn="header__hamburger-line-for-shop" />
+      <Header linkParentCn="header__nav-for-shop" linkChildCn="header__link-for-shop" WhatLogo={false} cartParentCn="cart-icon-for-shop" cartIcon="/search-icon-black.svg" hamburgerCn="header__hamburger-line-for-shop" />
       <MobileNavShop mobileNavParentCn="shop-header__mobile-nav" mobileNavLinkCn="shop-header__nav" />
     </div>
   )

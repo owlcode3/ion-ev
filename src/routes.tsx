@@ -6,6 +6,7 @@ import ShopBody from "./components/layouts/Shop/ShopBody"
 import ShopProductDetailsBody from "./components/layouts/Shop/ShopProductDetailsBody"
 import OrderProcessing from "./components/component/OrderProcessing"
 
+
 const router = createBrowserRouter(
   [
     {
@@ -13,11 +14,14 @@ const router = createBrowserRouter(
       element: <Home />
     },
     {
+      path: "/op",
+      element: <OrderProcessing />
+    },
+    {
       path: "/shop",
       element: <Shop />,
       children: [{ path: "", element: <ShopBody /> },
       { path: "/shop/:id", element: <ShopProductDetailsBody /> },
-      { path: "/shop/op", element: <OrderProcessing /> }
       ]
     }
   ]
