@@ -12,8 +12,7 @@ function EmptyCart() {
       </div>
 
       <div className="empty-cart__box-2">
-        <img className="empty-cart__bag-icon" src="/Artwork.svg" alt="cancel icon" />
-        <span className="empty-cart__bag-text">Your bag is empty</span>
+        <img className="empty-cart__bag-icon" src="/artwork-and-text.svg" alt="cancel icon" />
       </div>
 
       <div className="empty-cart__box-3">

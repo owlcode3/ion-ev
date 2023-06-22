@@ -12,6 +12,9 @@
   justify-content: space-between;
   padding: 2rem 3.5rem;
   border-bottom: 1px solid #f3f1ee;
+  @include media("<=55.9375em") {
+    padding: 2rem;
+  }
 }
 
 .empty-cart__heading {
@@ -31,6 +34,9 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 2rem 3.5rem;
+  @include media("<=55.9375em") {
+    padding: 2rem;
+  }
 }
 
 .empty-cart__bag-text {
@@ -47,13 +53,17 @@
 .empty-cart__box-3 {
   @extend %center;
   justify-content: space-between;
+  gap: 2rem;
   padding: 2rem 3.5rem;
   border-top: 1px solid #f3f1ee;
+  @include media("<=55.9375em") {
+    padding: 2rem;
+    gap: 1rem;
+  }
 }
 
 .empty-cart__btn {
   @extend %center;
-  justify-content: space-around;
   width: 28rem;
   height: 7rem;
   padding: 3.5rem;
@@ -62,6 +72,16 @@
   background: #5caaaa;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: $border;
+  @include media("<=55.9375em") {
+    // 895px
+    max-width: 28rem;
+  }
+
+  @include media("<=50.875em") {
+    // 814px
+    max-width: 50%;
+    font-size: 1.7rem;
+  }
 }
 
 .empty-cart__btn--2 {
