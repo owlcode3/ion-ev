@@ -8,8 +8,13 @@ import { useLocation } from "react-router-dom";
 function ShopHeader() {
 
   const location = useLocation()
+
   const menuState = useAppStore(s => s.productsRef.shopMenu)
+
   const setMenuState = useAppStore(s => s.setShopMenu)
+
+  const cartOpenHideStatus = useAppStore(s => s.productsRef.showHideCart)
+
 
 
   useEffect(() => {
@@ -17,13 +22,12 @@ function ShopHeader() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname])
 
-  console.log(location);
 
 
   useEffect(() => {
     const scrollBarWidth = window.innerWidth - document.body.clientWidth
 
-    if (menuState) {
+    if (menuState || cartOpenHideStatus) {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       document.getElementById("root")!.style.overflowY = "hidden"
       document.body.style.overflowY = "hidden"
@@ -34,7 +38,7 @@ function ShopHeader() {
       document.body.style.overflowY = ""
       document.body.style.marginRight = "";
     }
-  }, [menuState])
+  }, [menuState, cartOpenHideStatus])
 
   return (
     <div className="shop-header" style={{ background: location.pathname == "/shop" || location.pathname == "/shop/" ? "#f3f1ee" : "#FFFFFF" }}>

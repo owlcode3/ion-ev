@@ -5,6 +5,7 @@ import CartIcon from "./CartIcon";
 import HamburgerIconShop from "./HamburgerIconShop";
 import HamburgerIconHome from "./HamburgerIconHome";
 import Cart from "./Cart";
+import useAppStore from "../../store";
 
 type Props = {
   linkParentCn: string,
@@ -16,6 +17,8 @@ type Props = {
 }
 
 function Header({ linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, hamburgerCn }: Props) {
+
+  const cartShowHideStatus = useAppStore(s => s.productsRef.showHideCart)
 
   return (
     <>
@@ -29,6 +32,9 @@ function Header({ linkParentCn, linkChildCn, WhatLogo, cartParentCn, cartIcon, h
         {hamburgerCn ? <HamburgerIconShop spanCn={hamburgerCn} /> : <HamburgerIconHome />}
       </header>
       <Cart />
+      {
+        cartShowHideStatus && <div className="fade-page"></div>
+      }
     </>
   )
 }

@@ -20,7 +20,7 @@ function MobileNavShop({ mobileNavParentCn, mobileNavLinkCn }: Props) {
       <Link className={mobileNavLinkCn} to="/">Home</Link>
       <Link className={mobileNavLinkCn} to="/installation">Installation</Link>
       <Link className={mobileNavLinkCn} to="/shop">Shop</Link>
-      <div className={"home-header__cart-text-box" + " " + `${mobileNavLinkCn}`}><div onClick={() => setCartStatus(true)}>Cart</div> <span className="home-header__cart-no">0</span></div>
+      <div className={"home-header__cart-text-box" + " " + `${mobileNavLinkCn}`}><div className="home-header__cart-cart" onClick={() => setCartStatus(true)}>Cart</div> <span className="home-header__cart-no">0</span></div>
     </div>)
 }
 

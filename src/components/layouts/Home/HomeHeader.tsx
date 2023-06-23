@@ -8,8 +8,12 @@ import { useLocation } from "react-router-dom";
 
 function HomeHeader() {
   const location = useLocation()
+
   const menuState = useAppStore(s => s.productsRef.homeMenu)
+
   const setMenuState = useAppStore(s => s.setHomeMenu)
+
+  const cartOpenHideStatus = useAppStore(s => s.productsRef.showHideCart)
 
   useEffect(() => {
     setMenuState(false)
@@ -20,7 +24,7 @@ function HomeHeader() {
   useEffect(() => {
     const scrollBarWidth = window.innerWidth - document.body.clientWidth
 
-    if (menuState) {
+    if (menuState || cartOpenHideStatus) {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       document.getElementById("root")!.style.overflowY = "hidden"
       document.body.style.overflowY = "hidden"
@@ -31,7 +35,8 @@ function HomeHeader() {
       document.body.style.overflowY = ""
       document.body.style.marginRight = "";
     }
-  }, [menuState])
+  }, [menuState, cartOpenHideStatus])
+
 
   return (
     <div className="home-header">
