@@ -7,9 +7,10 @@ type ProductsType = {
    adaptersRef?: RefObject<HTMLElement>;
    evChargingRef?: RefObject<HTMLElement>;
    evAccessoriesRef?: RefObject<HTMLElement>;
-   shopMenu?: boolean;
-   homeMenu?: boolean;
-   showHideCart?: boolean;
+   shopMenu: boolean;
+   homeMenu: boolean;
+   showHideCart: boolean;
+   cartItemsNo: number;
 };
 
 type StoreType = {
@@ -22,13 +23,15 @@ type StoreType = {
    setShopMenu: (menu: boolean) => void;
    setHomeMenu: (menu: boolean) => void;
    setShowHideCart: (status: boolean) => void;
+   setCartItemsNo: (no: number) => void;
 };
 
 const useAppStore = create<StoreType>(set => ({
    productsRef: {
       shopMenu: false,
       homeMenu: false,
-      showHideCart: false
+      showHideCart: false,
+      cartItemsNo: 1
    },
    setResidentialRef: residentialRef =>
       set(store => ({ productsRef: { ...store.productsRef, residentialRef } })),
@@ -43,7 +46,9 @@ const useAppStore = create<StoreType>(set => ({
    setShopMenu: shopMenu => set(store => ({ productsRef: { ...store.productsRef, shopMenu } })),
    setHomeMenu: homeMenu => set(store => ({ productsRef: { ...store.productsRef, homeMenu } })),
    setShowHideCart: showHideCart =>
-      set(store => ({ productsRef: { ...store.productsRef, showHideCart } }))
+      set(store => ({ productsRef: { ...store.productsRef, showHideCart } })),
+   setCartItemsNo: cartItemsNo =>
+      set(store => ({ productsRef: { ...store.productsRef, cartItemsNo } }))
 }));
 
 export default useAppStore;

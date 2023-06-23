@@ -1,0 +1,247 @@
+.filled-cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $background;
+}
+
+.filled-cart__box-1 {
+  @extend %center;
+  justify-content: space-between;
+  padding: 2rem 3.5rem;
+  border-bottom: 1px solid #f3f1ee;
+  @include media("<=55.9375em") {
+    // 895px
+    padding: 2rem;
+  }
+  @include media("<=20.6875em") {
+    // 320px
+    padding: 1rem;
+  }
+}
+
+.filled-cart__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #525257;
+}
+
+.filled-cart__cancel-icon {
+  width: 4rem;
+  cursor: pointer;
+}
+
+.filled-cart__box-2 {
+  padding: 2rem 3.5rem;
+  @include media("<=55.9375em") {
+    // 895px
+    padding: 2rem;
+  }
+  @include media("<=20.6875em") {
+    // 320px
+    padding: 1rem;
+  }
+}
+
+.filled-cart__box-2-inner {
+  display: flex;
+  gap: 3rem;
+}
+
+.filled-cart__bag-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: #525257;
+}
+
+.filled-cart__bag-icon {
+  margin-bottom: 2rem;
+}
+
+.filled-cart__box-3 {
+  @extend %center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 3.5rem;
+  border-top: 1px solid #f3f1ee;
+  @include media("<=55.9375em") {
+    // 895px
+    padding: 2rem;
+    gap: 1rem;
+  }
+  @include media("<=28.125em") {
+    // 450px
+    gap: 2rem;
+  }
+  @include media("<=20.6875em") {
+    // 320px
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+.filled-cart__btn {
+  @extend %center;
+  width: 55%;
+  height: 7rem;
+  padding: 3.5rem;
+  font-size: 1.9rem;
+  color: $color-white;
+  background: #5caaaa;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $border;
+
+  @include media("<=50.875em") {
+    // 814px
+    max-width: 50%;
+    font-size: 1.7rem;
+  }
+  @include media("<=28.125em") {
+    // 450px
+    max-width: 38%;
+    height: 5rem;
+  }
+}
+
+.filled-cart__subtotal-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-style: normal;
+  width: 24rem;
+  height: 100%;
+  @include media("<=20.6875em") {
+    // 320px
+    gap: 1.5rem;
+  }
+}
+
+.filled-cart__subtotal-inner-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.filled-cart__subtotal {
+  font-weight: 400;
+  font-size: 2.7rem;
+  color: #6c6c72;
+  @include media("<=28.125em") {
+    // 450px
+    font-size: 2.5rem;
+  }
+}
+
+.filled-cart__exclude {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #919197;
+}
+
+.filled-cart__subtotal-price {
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #525257;
+  @include media("<=28.125em") {
+    // 450px
+    font-size: 2.5rem;
+  }
+}
+
+////////////////////////////////
+
+.filled-cart__img-box {
+  width: 12rem;
+  height: 12rem;
+  background: #f3f1ee;
+  border-radius: 8px;
+}
+
+.filled-cart__img {
+  width: 100%;
+  height: 100%;
+  // width: 12rem;
+  // height: 12rem;
+}
+
+.filled-cart__product-details {
+  font-style: normal;
+}
+
+.filled-cart__name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.filled-cart__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #525257;
+}
+
+.filled-cart__quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.filled-cart__quantity {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.25px;
+  color: #6c6c72;
+}
+
+.filled-cart__counts-box {
+  display: flex;
+  justify-content: space-between;
+  width: 13rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  color: #525257;
+}
+
+.filled-cart__add,
+.filled-cart__minus {
+  @extend %center;
+  width: 3rem;
+  height: 3rem;
+  background: #f3f1ee;
+  border-radius: 4px;
+}
+
+.filled-cart__remove-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.filled-cart__price {
+  font-size: 2.3rem;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #5caaaa;
+}
+
+.filled-cart__remove {
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #919197;
+}
