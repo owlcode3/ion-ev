@@ -15,7 +15,7 @@ function FilledCart() {
 
         <div className="filled-cart__box-2-inner">
           <div className="filled-cart__img-box">
-            <img className="filled-cart__img" src="/tsla-1.svg" alt="product image" />
+            <img className="filled-cart__img" src="/fc-img.svg" alt="product image" />
           </div>
 
           <div className="filled-cart__product-details">
