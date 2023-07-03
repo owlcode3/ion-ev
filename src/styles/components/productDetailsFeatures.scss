@@ -31,7 +31,6 @@
   }
   @include media("<=27.8125em") {
     // 445px
-    // padding: 0 1.5rem;
     gap: 1rem;
   }
 }
@@ -92,6 +91,7 @@
 
 .pd-features__box-2 {
   display: flex;
+  padding-top: 2rem;
 }
 
 .pd-features__installation-box,
@@ -141,4 +141,59 @@
 
 .pd-features__link-2 {
   color: #5caaaa;
+}
+
+.pd-features__lists-3 {
+  width: 100%;
+}
+
+.pd-features__list-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-left: 1.2rem;
+  width: 55rem;
+  @include media("<=37.5em") {
+    // 600px
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+}
+
+.pd-features__list-3-text {
+  width: 15rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  font-size: 1.4rem;
+  @include media("<=37.5em") {
+    // 600px
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+}
+
+.pd-features__list-3-inner {
+  width: 34rem;
+  font-size: 1.4rem;
+  text-align: left;
+  @include media("<=37.5em") {
+    // 600px
+    width: 32rem;
+    font-size: 1.5rem;
+  }
+  @include media("<=22.5em") {
+    // 360px
+    width: 90%;
+  }
+}
+
+.pd-features__list-3:not(:last-child) {
+  margin-bottom: 1.8rem;
 }
