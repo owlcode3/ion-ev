@@ -6,10 +6,10 @@ function ProductDetailsImage() {
         <img className="pd-image__img" src="/tsla-1.svg" alt="product image" />
         <div className="pd-image__icon-box-1">
           <div className="pd-image__arrow-1">
-            <img src="/public/arrow-l.svg" alt="arrow right icon" />
+            <img src="/arrow-l.svg" alt="arrow right icon" />
           </div>
           <div className="pd-image__arrow-2">
-            <img src="/public/arrow-r.svg" alt="arrow right icon" />
+            <img src="/arrow-r.svg" alt="arrow right icon" />
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 
 function Specifications() {
   return (
-    <>
+    <div className="pd-features__container">
       <ul className="pd-features__lists-3">
         <li className="pd-features__list-3">
           <span className="pd-features__list-3-text">Output Power:</span>
@@ -60,7 +60,7 @@ function Specifications() {
         </li>
 
       </ul>
-    </>
+    </div>
   )
 }
 

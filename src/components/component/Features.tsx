@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Features() {
   return (
-    <>
+    <div className="pd-features__container">
       <ul className="pd-features__lists-2">
         <li className="pd-features__list-2">
           Up to 44 mi of range added per hour
@@ -65,7 +65,7 @@ function Features() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import Features from "./Features"
 import Specifications from "./Specifications"
+import WhatYouReceive from "./WhatYouReceive"
 
 function ProductDetailsFeatures() {
   return (
@@ -19,7 +20,7 @@ function ProductDetailsFeatures() {
       </ul>
 
       <div className="pd-features__box-2">
-        <Specifications />
+        <WhatYouReceive />
       </div>
     </div>
   )
