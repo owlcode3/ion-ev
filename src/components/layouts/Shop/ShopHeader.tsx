@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 function ShopHeader() {
 
   const location = useLocation()
+  const pathname = location.pathname
 
   const menuState = useAppStore(s => s.productsRef.shopMenu)
 
@@ -20,7 +21,7 @@ function ShopHeader() {
   useEffect(() => {
     setMenuState(false)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location.pathname])
+  }, [pathname])
 
 
 
@@ -41,7 +42,9 @@ function ShopHeader() {
   }, [menuState, cartOpenHideStatus])
 
   return (
-    <div className="shop-header" style={{ background: location.pathname == "/shop" || location.pathname == "/shop/" ? "#f3f1ee" : "#FFFFFF" }}>
+    <div className="shop-header" style={{
+      background: pathname == "/shop" || pathname == "/shop/" ? "#f3f1ee" : "#FFFFFF", height: pathname.includes("checkout") ? "14rem" : "17rem"
+    }}>
       <Header linkParentCn="header__nav-for-shop" linkChildCn="header__link-for-shop" WhatLogo={false} cartParentCn="cart-icon-for-shop" cartIcon="/search-icon-black.svg" hamburgerCn="header__hamburger-line-for-shop" />
       <MobileNavShop mobileNavParentCn="shop-header__mobile-nav" mobileNavLinkCn="shop-header__nav" />
     </div>

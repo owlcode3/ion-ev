@@ -1,0 +1,11 @@
+.info-shipping {
+  padding: 0 6.5rem;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+  }
+  // @include media("<=34.375em") {
+  //   // 550px
+  //   padding: 0;
+  // }
+}

@@ -5,6 +5,8 @@ import Shop from "./components/pages/Shop"
 import ShopBody from "./components/layouts/Shop/ShopBody"
 import ShopProductDetailsBody from "./components/layouts/Shop/ShopProductDetailsBody"
 import OrderProcessing from "./components/component/OrderProcessing"
+import InfoAndShipping from "./components/component/InfoAndShipping"
+import Checkout from "./components/pages/Checkout"
 
 
 const router = createBrowserRouter(
@@ -18,10 +20,18 @@ const router = createBrowserRouter(
       element: <OrderProcessing />
     },
     {
+      path: "/checkout",
+      element: <Checkout />,
+      children: [
+        { path: "", element: <InfoAndShipping /> }
+      ]
+    },
+    {
       path: "/shop",
       element: <Shop />,
-      children: [{ path: "", element: <ShopBody /> },
-      { path: "/shop/:id", element: <ShopProductDetailsBody /> },
+      children: [
+        { path: "", element: <ShopBody /> },
+        { path: "/shop/:id", element: <ShopProductDetailsBody /> },
       ]
     }
   ]
