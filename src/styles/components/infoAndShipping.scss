@@ -9,3 +9,14 @@
   //   padding: 0;
   // }
 }
+
+.info-shipping__box {
+  padding: 5rem 0;
+}
+
+.info-shipping__box-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 55%;
+}

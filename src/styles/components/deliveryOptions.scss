@@ -1,0 +1,86 @@
+.do {
+}
+
+.do__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-bottom: 2.5rem;
+}
+
+.do__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.do__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 66rem;
+  height: 13rem;
+  padding: 2rem 3rem 2rem 4rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.do__list--active {
+  border: 1px solid #5caaaa;
+  background: linear-gradient(0deg, rgb(92, 170, 170, 0.1), rgb(92, 170, 170, 0.1)),
+    linear-gradient(0deg, #f7fcfc, #f7fcfc);
+}
+
+.do__heading-box {
+  display: flex;
+  justify-content: space-between;
+  color: #525257;
+}
+
+.do__heading-inner {
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+
+.do__price {
+  font-family: $satoshi;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+}
+
+.do__paragraph {
+  font-family: $satoshi;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.25px;
+  color: #6c6c72;
+  max-width: 53rem;
+}
+
+.do__bold {
+  font-weight: 500;
+}
+
+.do__btn {
+  display: flex;
+  width: 32rem;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #5caaaa;
+  border-radius: 100px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  align-self: flex-end;
+  margin-right: 0.5rem;
+}
