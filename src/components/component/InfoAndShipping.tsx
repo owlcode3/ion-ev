@@ -3,6 +3,7 @@ import ContactInformation from "./ContactInformation";
 import DeliveryOptions from "./DeliveryOptions";
 import SaveAndContinueBtn from "./SaveAndContinueBtn";
 import ShippingInformation from "./ShippingInformation";
+import YourOrder from "./YourOrder";
 
 function InfoAndShipping() {
   return (
@@ -15,6 +16,7 @@ function InfoAndShipping() {
           <DeliveryOptions />
           <SaveAndContinueBtn />
         </div>
+        <YourOrder />
       </div>
     </div>
   )
