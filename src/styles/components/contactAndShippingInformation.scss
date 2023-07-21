@@ -1,4 +1,8 @@
 .ci {
+  // @include media("<=61.875em") {
+  //   // 990px
+  //   width: 100%;
+  // }
 }
 
 .ci__heading {
@@ -13,6 +17,10 @@
 .ci__form {
   display: flex;
   gap: 2rem;
+  @include media("<=37.5em") {
+    // 600px
+    flex-direction: column;
+  }
 }
 
 .ci__input-box {
@@ -20,6 +28,11 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
+  width: 50%;
+  @include media("<=61.875em") {
+    // 990px
+    width: 100%;
+  }
 }
 
 .ci__input-box--2 {
@@ -44,7 +57,8 @@
   border: none;
   outline: none;
   height: 3.6rem;
-  width: 32rem;
+  // width: 32rem;
+  width: 100%;
   background: #f3f1ee;
   border-radius: 2px;
   color: #6c6c72;

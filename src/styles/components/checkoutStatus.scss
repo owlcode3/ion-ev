@@ -3,6 +3,11 @@
   justify-content: space-between;
   height: 8rem;
   border-bottom: 1px solid #dcdcdc;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+    border-bottom: none;
+  }
   @include media("<=34.375em") {
     // 550px
     flex-direction: column;

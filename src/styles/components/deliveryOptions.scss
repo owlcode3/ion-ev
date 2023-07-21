@@ -20,8 +20,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 66rem;
-  height: 13rem;
+  // width: 66rem;
+  width: 100%;
+  min-height: 13rem;
   padding: 2rem 3rem 2rem 4rem;
   border-radius: 8px;
   border: 1px solid #eaeaea;
@@ -83,4 +84,8 @@
   color: #ffffff;
   align-self: flex-end;
   margin-right: 0.5rem;
+  @include media("<=61.875em") {
+    // 990px
+    align-self: center;
+  }
 }
