@@ -53,12 +53,17 @@
   color: #525257;
 }
 
+.your-order__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .your-order__hide-icon {
   display: none;
   @include media("<=43.75em") {
     // 700px
     display: inline-block;
-    margin-left: 0.2rem;
     cursor: pointer;
   }
 }
