@@ -7,6 +7,7 @@ import ShopProductDetailsBody from "./components/layouts/Shop/ShopProductDetails
 import OrderProcessing from "./components/component/OrderProcessing"
 import InfoAndShipping from "./components/component/InfoAndShipping"
 import Checkout from "./components/pages/Checkout"
+import Payment from "./components/component/Payment"
 
 
 const router = createBrowserRouter(
@@ -23,7 +24,13 @@ const router = createBrowserRouter(
       path: "/checkout",
       element: <Checkout />,
       children: [
-        { path: "", element: <InfoAndShipping /> }
+        {
+          path: "", element:
+            <>
+              <InfoAndShipping />
+              <Payment />
+            </>
+        }
       ]
     },
     {

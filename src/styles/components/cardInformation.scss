@@ -1,0 +1,142 @@
+.card-information {
+  // @include media("<=61.875em") {
+  //   // 990px
+  //   width: 100%;
+  // }
+}
+
+.card-information__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-bottom: 2.5rem;
+}
+
+.card-information__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include media("<=37.5em") {
+    // 600px
+  }
+}
+
+.card-information__input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 69%;
+  @include media("<=61.875em") {
+    // 990px
+    width: 100%;
+  }
+}
+
+.card-information__label-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-information__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: #525257;
+  margin-bottom: 0.5rem;
+}
+
+.card-information__input {
+  border: none;
+  outline: none;
+  height: 3.6rem;
+  // width: 32rem;
+  width: 100%;
+  background: #f3f1ee;
+  border-radius: 2px;
+  color: #6c6c72;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-information__box {
+  display: flex;
+  gap: 2.5rem;
+  width: 69%;
+}
+
+.card-information__sc-icon {
+  margin-left: 0.5rem;
+}
+
+.card-information__input-checkbox {
+  display: block;
+}
+
+.card-information__input-box--checkbox {
+}
+
+.card-information__label-box--checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-information__label--checkbox {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.card-information__label-box--checkbox input[type="checkbox"] {
+  position: relative;
+  width: 18px !important;
+  height: 18px !important;
+  appearance: none;
+  border-radius: 10%;
+  box-shadow: none;
+  font-size: 1em;
+  border: 1px solid rgba(92, 170, 170, 0.5);
+  margin-right: 0.7rem;
+}
+
+.card-information__label-box--checkbox input[type="checkbox"]:checked {
+  background: rgba(92, 170, 170, 1);
+}
+
+.card-information__label-box--checkbox input[type="checkbox"]:checked:after {
+  content: "\2713";
+  position: absolute;
+  color: white;
+  right: 0.2rem;
+  top: -0.2rem;
+}
+
+.card-information__btn {
+  display: flex;
+  width: 70%;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #5caaaa;
+  border-radius: 100px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  // margin-right: 0.5rem;
+  // @include media("<=61.875em") {
+  //   // 990px
+  //   align-self: center;
+  // }
+  // @include media("<=37.5em") {
+  //   // 600px
+  //   width: 100%;
+  //   padding: 2rem 1rem;
+  // }
+}

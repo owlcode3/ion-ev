@@ -1,0 +1,44 @@
+.payment {
+  padding: 0 6.5rem;
+  @include media("<=43.75em") {
+    // 700px
+    // padding: 0 3rem;
+    padding: 0 0;
+  }
+  // @include media("<=34.375em") {
+  //   // 550px
+  //   padding: 0;
+  // }
+}
+
+.payment__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  gap: 4rem;
+  @include media("<=61.875em") {
+    // 990px
+    flex-direction: column;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+}
+
+.payment__box-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 55%;
+  @include media("<=61.875em") {
+    // 990px
+    order: 1;
+    width: 100%;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+  }
+}

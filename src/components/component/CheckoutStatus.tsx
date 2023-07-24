@@ -1,4 +1,4 @@
-
+type CheckoutStage = "";
 function CheckoutStatus() {
   return (
     <div className="checkout-status">
