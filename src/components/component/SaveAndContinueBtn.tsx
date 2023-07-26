@@ -1,7 +1,10 @@
+import useAppStore from "../../store";
 
 function SaveAndContinueBtn() {
+  const setStage = useAppStore(s => s.setStage);
+
   return (
-    <button className="do__btn" type="button">Save & Continue</button>
+    <button onClick={() => setStage("payment")} className="do__btn" type="button">Save & Continue</button>
   )
 }
 

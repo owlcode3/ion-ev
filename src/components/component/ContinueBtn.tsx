@@ -1,7 +1,11 @@
+import useAppStore from "../../store";
 
 function ContinueBtn() {
+
+  const setStage = useAppStore(s => s.setStage);
+
   return (
-    <button className="card-information__btn" type="button">Continue</button>
+    <button onClick={() => setStage("summary")} className="card-information__btn" type="button">Continue</button>
   )
 }
 

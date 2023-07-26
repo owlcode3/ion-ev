@@ -4,3 +4,5 @@ export type ProductDetails = {
    Img: string;
    altName: string;
 }[];
+
+export type CheckoutStage = "cart" | "info" | "payment" | "summary";

@@ -1,5 +1,6 @@
 import { RefObject } from "react";
 import { create } from "zustand";
+import { CheckoutStage } from "./types";
 
 type ProductsType = {
    residentialRef?: RefObject<HTMLElement>;
@@ -11,6 +12,7 @@ type ProductsType = {
    homeMenu: boolean;
    showHideCart: boolean;
    cartItemsNo: number;
+   stage?: CheckoutStage;
 };
 
 type StoreType = {
@@ -24,6 +26,7 @@ type StoreType = {
    setHomeMenu: (menu: boolean) => void;
    setShowHideCart: (status: boolean) => void;
    setCartItemsNo: (no: number) => void;
+   setStage: (stage: CheckoutStage) => void;
 };
 
 const useAppStore = create<StoreType>(set => ({
@@ -48,7 +51,8 @@ const useAppStore = create<StoreType>(set => ({
    setShowHideCart: showHideCart =>
       set(store => ({ productsRef: { ...store.productsRef, showHideCart } })),
    setCartItemsNo: cartItemsNo =>
-      set(store => ({ productsRef: { ...store.productsRef, cartItemsNo } }))
+      set(store => ({ productsRef: { ...store.productsRef, cartItemsNo } })),
+   setStage: stage => set(store => ({ productsRef: { ...store.productsRef, stage } }))
 }));
 
 export default useAppStore;
