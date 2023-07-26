@@ -14,7 +14,7 @@ function Payment() {
           <CardInformation />
           <ContinueBtn />
         </div>
-        <YourOrder />
+        <YourOrder addMarginTop />
       </div>
     </div>
   )

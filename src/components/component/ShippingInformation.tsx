@@ -346,7 +346,7 @@ function ShippingInformation() {
           </div>
           <div className="ci__label-box">
             <label className="ci__label" htmlFor="mpn">Mobile Phone Number</label>
-            <input className="ci__input" type="text" id="mpn" name="mpn" />
+            <input className="ci__input" type="tel" id="mpn" name="mpn" maxLength={11} minLength={11} />
           </div>
         </div>
       </form>

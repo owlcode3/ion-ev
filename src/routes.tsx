@@ -27,7 +27,7 @@ const router = createBrowserRouter(
         {
           path: "", element:
             <>
-              <InfoAndShipping />
+              {/* <InfoAndShipping /> */}
               <Payment />
             </>
         }

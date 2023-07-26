@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  width: 48rem;
+  max-width: 80%;
   margin-top: 0.5rem;
 }
 
@@ -30,9 +30,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 14rem;
-  height: 8.5rem;
-  padding: 16px 24px 16px 24px;
+  width: 15rem;
+  height: 8.7rem;
+  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
   border-radius: 2px;
   border: 0.5px;
   gap: 0.5rem;
@@ -40,7 +40,7 @@
 }
 
 .payment-method__list--active {
-  border: .5px solid #5caaaa;
+  border: 0.5px solid #5caaaa;
   background: linear-gradient(0deg, rgb(92, 170, 170, 0.1), rgb(92, 170, 170, 0.1)),
     linear-gradient(0deg, #f7fcfc, #f7fcfc);
 }

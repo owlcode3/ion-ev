@@ -26,6 +26,14 @@
   }
 }
 
+.your-order__mt {
+  margin-top: 3rem;
+  @include media("<=61.875em") {
+    // 990px
+    margin-top: 0;
+  }
+}
+
 .your-order__boxes-boxes {
   height: 100%;
   display: flex;

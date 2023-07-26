@@ -18,8 +18,13 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  @include media("<=37.5em") {
-    // 600px
+  @include media("<=61.875em") {
+    // 990px
+    width: 42rem;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    width: 100%;
   }
 }
 
@@ -68,6 +73,15 @@
   display: flex;
   gap: 2.5rem;
   width: 69%;
+  @include media("<=61.875em") {
+    // 990px
+    gap: 2rem;
+    width: 100%;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    gap: 1rem;
+  }
 }
 
 .card-information__sc-icon {
@@ -90,6 +104,10 @@
 .card-information__label--checkbox {
   margin-bottom: 0;
   line-height: 0;
+  @include media("<=17.5em") {
+    // 440px
+    line-height: 2rem;
+  }
 }
 
 .card-information__label-box--checkbox input[type="checkbox"] {
@@ -129,14 +147,12 @@
   line-height: 27px;
   letter-spacing: 0.25px;
   color: #ffffff;
-  // margin-right: 0.5rem;
-  // @include media("<=61.875em") {
-  //   // 990px
-  //   align-self: center;
-  // }
-  // @include media("<=37.5em") {
-  //   // 600px
-  //   width: 100%;
-  //   padding: 2rem 1rem;
-  // }
+  @include media("<=61.875em") {
+    // 990px
+    width: 42rem;
+  }
+  @include media("<=27.5em") {
+    // 440px
+    width: 100%;
+  }
 }

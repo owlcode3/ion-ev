@@ -1,11 +1,11 @@
 import { useState } from "react"
 
-function YourOrder() {
+function YourOrder({ addMarginTop }: { addMarginTop?: boolean }) {
 
   const [hideOrder, setHideOrder] = useState(false);
 
   return (
-    <div className="your-order">
+    <div className={`your-order ${addMarginTop ? "your-order__mt" : ""}`}>
       <div className="your-order__box-1">
         <span className="your-order__heading">Your Order
           {
