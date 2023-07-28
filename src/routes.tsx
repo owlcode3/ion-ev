@@ -8,6 +8,7 @@ import OrderProcessing from "./components/component/OrderProcessing"
 import InfoAndShipping from "./components/component/InfoAndShipping"
 import Checkout from "./components/pages/Checkout"
 import Payment from "./components/component/Payment"
+import Summary from "./components/component/Summary"
 
 
 const router = createBrowserRouter(
@@ -28,7 +29,8 @@ const router = createBrowserRouter(
           path: "", element:
             <>
               {/* <InfoAndShipping /> */}
-              <Payment />
+              <Summary />
+              {/* <Payment /> */}
             </>
         }
       ]

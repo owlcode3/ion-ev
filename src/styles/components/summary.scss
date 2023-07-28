@@ -1,0 +1,101 @@
+.summary {
+  padding: 0 6.5rem;
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 0;
+  }
+}
+
+.summary__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  gap: 4rem;
+  @include media("<=61.875em") {
+    // 990px
+    flex-direction: column;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+}
+
+.summary__box-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  // width: 40%;
+  width: 52rem;
+  @include media("<=61.875em") {
+    // 990px
+    order: 1;
+    width: 100%;
+  }
+  @include media("<=43.75em") {
+    // 700px
+    padding: 0 3rem;
+  }
+}
+
+.summary__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.summary__list {
+  max-width: 51rem;
+}
+
+.summary__list--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  margin-bottom: 0.4rem;
+}
+
+.summary__paragraph {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.25px;
+  max-width: 52rem;
+}
+
+.summary__paragraph--others {
+  width: 14.5rem;
+}
+
+.summary__underline {
+  text-decoration: underline;
+}
+
+.summary__list-box {
+}
+
+.summary__edit {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.summary__payment-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.summary__payment-card-type {
+  width: 3.5rem;
+}
