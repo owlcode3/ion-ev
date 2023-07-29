@@ -75,11 +75,9 @@
 }
 
 .do__btn {
-  display: flex;
+  @extend %center;
   width: 32rem;
   padding: 2rem 2rem;
-  justify-content: center;
-  align-items: center;
   background: #5caaaa;
   border-radius: 100px;
   font-size: 1.8rem;
