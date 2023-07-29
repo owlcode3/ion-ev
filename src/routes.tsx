@@ -9,6 +9,7 @@ import InfoAndShipping from "./components/component/InfoAndShipping"
 import Checkout from "./components/pages/Checkout"
 import Payment from "./components/component/Payment"
 import Summary from "./components/component/Summary"
+import Congrats from "./components/component/Congrats"
 
 
 const router = createBrowserRouter(
@@ -19,7 +20,8 @@ const router = createBrowserRouter(
     },
     {
       path: "/op",
-      element: <OrderProcessing />
+      // element: <OrderProcessing />
+      element: <Congrats />
     },
     {
       path: "/checkout",
@@ -29,7 +31,7 @@ const router = createBrowserRouter(
           path: "", element:
             <>
               {/* <InfoAndShipping /> */}
-              <Summary />
+              {/* <Summary /> */}
               {/* <Payment /> */}
             </>
         }

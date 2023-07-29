@@ -1,0 +1,49 @@
+.congrats {
+  @extend %center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+.congrats__box {
+  @extend %center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.congrats__spinner {
+  animation: scale 0.6s linear;
+}
+
+.congrats__heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  margin-bottom: 0.5rem;
+}
+
+.congrats__paragraph {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  max-width: 62rem;
+  padding: 0 2rem;
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}

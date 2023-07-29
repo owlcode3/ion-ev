@@ -3,7 +3,7 @@ function OrderProcessing() {
   return (
     <div className="order-processing">
       <div className="order-processing__box">
-        <img className="order-processing__spinner" src="/public/Ellipse 1.png" alt="loading spinner" />
+        <img className="order-processing__spinner" src="/Ellipse 1.png" alt="loading spinner" />
 
         <div>
           <h2 className="order-processing__heading">Your order is processing.</h2>
