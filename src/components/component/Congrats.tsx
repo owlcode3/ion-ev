@@ -14,7 +14,8 @@ function Congrats() {
 
         <button className="congrats__btn" type="button">Ok</button>
       </div>
-    </div>)
+    </div>
+  )
 }
 
 export default Congrats

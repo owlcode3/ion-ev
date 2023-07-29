@@ -10,6 +10,7 @@ import Checkout from "./components/pages/Checkout"
 import Payment from "./components/component/Payment"
 import Summary from "./components/component/Summary"
 import Congrats from "./components/component/Congrats"
+import OrderNotProcessed from "./components/component/OrderNotProcessed"
 
 
 const router = createBrowserRouter(
@@ -21,7 +22,8 @@ const router = createBrowserRouter(
     {
       path: "/op",
       // element: <OrderProcessing />
-      element: <Congrats />
+      // element: <Congrats />
+      element: <OrderNotProcessed />
     },
     {
       path: "/checkout",
